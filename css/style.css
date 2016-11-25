@@ -42,7 +42,7 @@ div#main-container
 aside
 {
     width: 20%;
-    min-height: 78.73vh;
+    min-height: calc(100vh - 150px);
     border: 3px solid black;
     box-sizing: border-box;
 }
