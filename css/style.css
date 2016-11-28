@@ -73,3 +73,11 @@ h1, footer h2
     transform: translate(-50%,-50%);
     white-space: nowrap;
 }
+
+main div
+{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
