@@ -1,3 +1,5 @@
+"use strict"
+
 let changeColor = function(coll, color){
 
     for(let i=0; i<coll.length; i++)
@@ -6,7 +8,7 @@ let changeColor = function(coll, color){
     }
 }
 
-window.onload=function(){
+let animatedAsideMenu = function(){
     let aColl = document.getElementsByClassName("un");
     let bColl = document.getElementsByClassName("deux");
     let cColl = document.getElementsByClassName("trois");
@@ -35,3 +37,5 @@ window.onload=function(){
         changeColor(cColl, '');
     });
 }
+
+document.addEventListener("DOMContentLoaded", animatedAsideMenu);
