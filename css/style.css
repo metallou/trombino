@@ -1,3 +1,8 @@
+*
+{
+    box-sizing: border-box;
+}
+
 html, body
 {
     margin: 0;
@@ -74,10 +79,134 @@ h1, footer h2
     white-space: nowrap;
 }
 
-main div
+/* Test */
+div.un, div.deux, div.trois
 {
     display: inline-block;
     width: 100px;
     height: 100px;
     border: 1px solid black;
+}
+
+article, article *
+{
+    border: 1px solid black;
+}
+/* */
+
+section
+{
+    display: flex;
+}
+
+article
+{
+    position: relative;
+}
+
+figure
+{
+    position: relative;
+}
+
+figure img
+{
+    background-image: url("../images/fond.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 250px 500px;
+    width: 250px;
+    height: 500px;
+}
+
+div.icons
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons .unused
+{
+    background-color: #000000;
+}
+
+.icnonsphomail
+{
+    position: relative;
+}
+
+.iconpho, .iconmail
+{
+    cursor: pointer;
+}
+
+.textpho, .textmail
+{
+    display: none;
+    position: absolute;
+    bottom: 22px;
+    right: 0;
+}
+
+.textpho.selected, .textmail.selected
+{
+    display: block;
+}
+
+div.text
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    background: #FFFFFF;
+    opacity: 0;
+}
+
+.text p
+{
+    text-align: left;
+}
+div.text p
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+.text q
+{
+    text-align: right;
+}
+div.text q
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+div.text:hover
+{
+    opacity: 0.75;
+}
+
+details.text
+{
+    display: none;
+}
+
+@media screen and (max-width: 600px)
+{
+    div.text
+    {
+        display: none;
+    }
+
+    details.text
+    {
+        display: block;
+    }
 }
