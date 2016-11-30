@@ -163,29 +163,29 @@ div.text
     background: #FFFFFF;
     opacity: 0;
 }
-
-.text p
-{
-    text-align: left;
-}
 div.text p
 {
     position: absolute;
-    top: 0;
-    left: 0;
-    text-align: left;
 }
 
-.text q
+p.texttext
+{
+    text-align: left;
+}
+div.text p.textext
+{
+    top: 0;
+    left: 0;
+}
+
+p.textquote
 {
     text-align: right;
 }
-div.text q
+div.text p.textquote
 {
-    position: absolute;
     bottom: 0;
     right: 0;
-    text-align: right;
 }
 
 div.text:hover
