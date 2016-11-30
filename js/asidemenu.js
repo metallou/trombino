@@ -9,23 +9,25 @@ let changeColor = function(coll, color){
 }
 
 let animatedAsideMenu = function(){
-    let aColl = document.getElementsByClassName("un");
-    let bColl = document.getElementsByClassName("deux");
-    let cColl = document.getElementsByClassName("trois");
+    //Networks
+    let aColl = document.getElementsByClassName("github");
+    let bColl = document.getElementsByClassName("linkedin");
+    let cColl = document.getElementsByClassName("viadeo");
+    //Skills
 
-    document.getElementById("un").addEventListener('click', function(){
+    document.getElementById("github").addEventListener('click', function(){
         changeColor(aColl, '#FF0000');
         changeColor(bColl, '');
         changeColor(cColl, '');
     });
 
-    document.getElementById("deux").addEventListener('click', function(){
+    document.getElementById("linkedin").addEventListener('click', function(){
         changeColor(aColl, '');
         changeColor(bColl, '#FFFF00');
         changeColor(cColl, '');
     });
 
-    document.getElementById("trois").addEventListener('click', function(){
+    document.getElementById("viadeo").addEventListener('click', function(){
         changeColor(aColl, '');
         changeColor(bColl, '');
         changeColor(cColl, '#0000FF');

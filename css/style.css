@@ -80,7 +80,7 @@ h1, footer h2
 }
 
 /* Test */
-div.un, div.deux, div.trois
+div.github, div.linkedin, div.viadeo
 {
     display: inline-block;
     width: 100px;
@@ -111,10 +111,10 @@ figure
 
 figure img
 {
-    background-image: url("../images/fond.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 250px 500px;
+    backgr.githubd-image: url("../images/fond.jpg");
+    backgr.githubd-repeat: no-repeat;
+    backgr.githubd-position: center center;
+    backgr.githubd-size: 250px 500px;
     width: 250px;
     height: 500px;
 }
@@ -161,7 +161,7 @@ div.text
     left: 0;
     width: 250px;
     height: 500px;
-    background: #FFFFFF;
+    backgr.githubd: #FFFFFF;
     opacity: 0;
 }
 div.text p
