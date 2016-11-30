@@ -1,0 +1,772 @@
+/* -----------------------------------------------Reset User Agent */
+/*To remove any margin or border, reset font size & font style, reset the vertical alignment to its default value*/
+html, body, div, span, applet,
+p, blockquote,
+a, big, cite, code,
+em, img,
+small, strike, strong, tt,
+b, u, i,
+ol, ul, li,
+form, label, legend,
+table,
+article, aside, canvas,
+figure, figcaption, footer, header,
+menu, nav, output, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+	font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* hyphens & too long words go to next line */
+div, textarea, table, td, th, code, pre, samp {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+/*To remove bullets from bulleted lists*/
+ul, li {
+	list-style: none;
+}
+/*To remove underlining or any other effect on links*/
+a, a:target, a:visited, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* -----------------------------------------------Helper Class */
+
+
+/*** Positions ***/
+
+.porel {
+    position: relative;
+}
+
+.poabs {
+    position: absolute;
+}
+
+.pofix {
+    position: fixed;
+}
+
+.postat {
+    position: static;
+}
+
+.pofixup {
+    position: fixed;
+    top: 0;
+}
+
+.pofixdown {
+    position: fixed;
+    bottom: 0;
+}
+
+.poabsdl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.poabsdr {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.poabsul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.poabsur {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*** Display ***/
+
+.dblock {
+    display: block;
+}
+
+.dinblock {
+    display: inline-block;
+}
+
+.dflex {
+    display: flex;
+}
+
+.dflexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*** Float ***/
+
+.floatr {
+    float: right;
+}
+
+.floatl {
+    float: left;
+}
+
+.floatn {
+    float: none;
+}
+
+.floatfix {
+    clear: both;
+}
+
+/*** Flex properties ***/
+.dflex {
+  display:flex;
+}
+
+.dflexcenter {
+  display:flex;
+  justify-content:center;
+}
+
+.dflexsp-b {
+  display:flex;
+  justify-content:space-between;
+}
+
+.dflex-a {
+  display:flex;
+  justify-content:space-around;
+}
+
+
+/*** Hide Elements ***/
+
+.dnone {
+    /* full Hide elements */
+    display: none;
+}
+
+.visuallyhidden {
+    /* elements still visible by DOM but not by User*/
+    position: absolute;
+    top: -999px;
+    left: -9999px;
+}
+
+.visibhidden {
+    /* hide content but space location still visible*/
+    visibility: hidden;
+}
+
+
+/*** Overflow ***/
+
+.overhidden {
+    overflow: hidden;
+}
+
+
+/*** Center elements ***/
+.centerm {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centert {
+  text-align:center;
+}
+
+/*** Border Radius ***/
+.border-radius {
+  border-radius:0.4em;
+}
+
+/*** Defaults Colors & background ***/
+.color {
+  color: blue;
+}
+
+.bg {
+  background: #dedede;
+}
+
+
+/* -----------------------------------------------General Styles */
+
+
+code {
+    display: block;
+    background: #3F3F3F;
+    color: white;
+}
+
+/* -----------------------------------------------Navigation Bar */
+
+/* Navigation Bar*/
+.nav {
+    width: 100%;
+}
+.nav>ul {
+    list-style-type: none;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav>ul li {
+    flex: 1;
+}
+.nav li a {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #2f3036;
+    display: flex;
+    justify-content: center;
+}
+.nav li:hover a {
+    background-color: #aaaaaa;
+    color: black;
+    transition: 0.2s;
+}
+/*Liens Toggle*/
+.nav li:hover ul a {
+    background-color: #aaaaaa;
+    color: #2f3036;
+    height: 50px;
+    line-height: 50px;
+}
+/*Hover liens Toggle*/
+.nav li:hover ul a:hover {
+    background-color: #e2575e;
+    transition: 0.1s;
+}
+/*Cache liens Toggle*/
+.nav li ul {
+    display: none;
+}
+/*Permet affichage liens Toggle*/
+.nav>ul li a:hover+.hid_ul, .hid_ul:hover {
+    display: block;
+    padding: 0;
+}
+
+.nav input[type=checkbox], .show-menu {
+    display: none;
+}
+.show-menu {
+    color: #fff;
+    background-color: #2f3036;
+    text-align: center;
+    padding: 10px 0;
+}
+.nav input[type=checkbox]:checked~ul:first-of-type {
+    display: block;
+}
+
+/* -----------------------------------------------Grid */
+
+/*- The Responsive Grid */
+
+.grid, .borderbox{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Grid Display*/
+
+.grid {
+    display: block;
+    clear: both;
+}
+
+/* Cancel spaces between elements*/
+
+.no-space {
+    padding: 0;
+}
+.grid *{
+  box-sizing: border-box;
+}
+
+/* Grid Widths */
+/*--1/12--*/
+.grid .one-twelve, .grid .w-1-12 {
+    width: calc(100%/12);
+    float: left;
+    padding: 10px;
+}
+/*--2/12--*/
+.grid .two-twelve, .grid .w-1-6, .grid .w-2-12 {
+    width: calc(100%/6);
+    float: left;
+    padding: 10px;
+}
+/*--3/12--*/
+.grid .three-twelve, .grid .w-1-4, .grid .w-3-12 {
+    width: calc(100%/4);
+    float: left;
+    padding: 10px;
+}
+/*--4/12--*/
+.grid .four-twelve, .grid .w-1-3,.grid .w-2-6, .grid .w-4-12 {
+    width: calc(100%/3);
+    float: left;
+    padding: 10px;
+}
+/*--5/12--*/
+.grid .five-twelve, .grid .w-5-12 {
+    width: calc(500%/12);
+    float: left;
+    padding: 10px;
+}
+/*--6/12--*/
+.grid .six-twelve, .grid .w-1-2, .grid .w-2-4, .grid .w-3-6, .grid .w-6-12{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+/*--7/12--*/
+.grid .seven-twelve, .grid .w-7-12 {
+    width: calc(700%/12);
+    float: left;
+    padding: 10px;
+}
+/*--8/12--*/
+.grid .eight-twelve, .grid .w-2-3,.grid .w-4-6, .grid .w-8-12 {
+    width: calc(200%/3);
+    float: left;
+    padding: 10px;
+}
+/*--9/12--*/
+.grid .nine-twelve, .grid .w-3-4, .grid .w-9-12 {
+    width: 75%;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+/*--10/12--*/
+.grid .ten-twelve, .grid .w-5-6, .grid .w-10-12 {
+    width: calc(500%/6);
+    float: left;
+    padding: 10px;
+}
+/*--11/12--*/
+.grid .onze-twelve, .grid .w-11-12 {
+    width: calc(1100%/12);
+    float: left;
+    padding: 10px;
+}
+/*--12/12--*/
+.grid .twelve-twelve, .grid .w-12-12, .grid .w-1{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+/**Grid Media Query**/
+@media all (max-width:768px){
+  .grid>* {
+    width:100%;
+  }
+}
+
+/* ----------------------------------------------- FlexGrid */
+
+.containflex {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.colnorm {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.coltiny {
+    flex: 0.5;
+    box-sizing: border-box;
+}
+
+.colmedium {
+    flex: 2;
+    box-sizing: border-box;
+}
+
+.colbig {
+    flex: 4;
+    box-sizing: border-box;
+}
+
+.colflexnorm {
+    display: flex;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.colflextiny {
+    display: flex;
+    flex: 0.5;
+    box-sizing: border-box;
+}
+
+.colflexmedium {
+    display: flex;
+    flex: 2;
+    box-sizing: border-box;
+}
+
+.colflexbig {
+    display: flex;
+    flex: 4;
+    box-sizing: border-box;
+}
+
+/* -----------------------------------------------Form */
+
+.form {
+    margin: 5px 10%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    font-family: serif;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.form label {
+    display: inline-block;
+    min-width: 25%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form fieldset {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 5%;
+}
+
+.form legend {
+    font-style: italic;
+    text-align: left;
+}
+
+.form input {
+    border-radius: 3px;
+    margin: 1% 0px;
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.form input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin: 5px 5px;
+}
+
+.form input:focus {
+    transition: 0.5s;
+}
+
+.form textarea {
+    width: 40%;
+    height: 10vh;
+    margin: 5px;
+}
+
+.form select {
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    width: 40%;
+}
+
+.form button {
+    padding: 8px 0px;
+    width: 100px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #8FE583;
+    cursor: pointer;
+}
+
+.form button:active {
+    box-shadow: inset 1px 1px 5px grey;
+}
+
+.form button:focus {
+    outline: none;
+}
+
+.form .question {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* -----------------------------------------------Tableaux */
+
+.table {
+    background: #EEEEEE;
+    border-collapse: separate;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    font-size: 0.9em;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+}
+
+.table th {
+    background: linear-gradient(#777, #444);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.table td {
+    border: 1px solid #fff;
+    padding: 10px 15px;
+}
+
+.table tbody tr td:first-child {
+    font-weight: bold;
+}
+
+
+/* -----------------------------------------------Tableaux */
+
+.table {
+    background: #EEEEEE;
+    border-collapse: separate;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    font-size: 0.9em;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+}
+
+.table th {
+    background: linear-gradient(#777, #444);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.table td {
+    border: 1px solid #fff;
+    padding: 10px 15px;
+}
+
+.table tbody tr td:first-child {
+    font-weight: bold;
+}
+
+/*class to round elements*/
+.rounded {
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+/*class to make circle elements*/
+.circle {
+  -webkit-border-radius: 500px;
+     -moz-border-radius: 500px;
+          border-radius: 500px;
+}
+
+/*-Elements sizes*/
+/*width*/
+.w10p {width: 10px;}
+.w20p {width: 20px;}
+.w30p {width: 30px;}
+.w40p {width: 40px;}
+.w50p {width: 50px;}
+.w60p {width: 60px;}
+.w70p {width: 70px;}
+.w80p {width: 80px;}
+.w90p {width: 90px;}
+.w100p {width: 100px;}
+.w150p {width: 200px;}
+.w200p {width: 300px;}
+.w250p {width: 400px;}
+.w300p {width: 500px;}
+.w400p {width: 600px;}
+.w450p {width: 700px;}
+.w500p {width: 800px;}
+.w550p {width: 900px;}
+.w600p {width: 100px;}
+.w650p {width: 200px;}
+.w700p {width: 300px;}
+.w750p {width: 400px;}
+.w800p {width: 500px;}
+.w850p {width: 600px;}
+.w900p {width: 700px;}
+.w950p {width: 800px;}
+.w1000p {width: 1000px;}
+/*- For those who want some percentage widths, but don't want to bother with the grid*/
+/*1 quarter of its closest ancestor*/
+.w-1-4 {
+  width: 25%;
+}
+/*1 third of its closest ancestor*/
+.w-1-3 {
+  width: calc(100%/3);
+}
+/*half of its closest ancestor*/
+.w-1-2 {
+  width: 50%;
+}
+/*2 third of its closest ancestor*/
+.w-2-3 {
+  width: calc(100%*2/3);
+}
+/*3 quarters of its closest ancestor*/
+.w-3-4 {
+  width: 75%;
+}
+/*100 percent of its closest ancestor*/
+.w-1-1 {
+  width: 100%;
+}
+
+/*-Height*/
+.h10p {height: 10px;}
+.h20p {height: 20px;}
+.h30p {height: 30px;}
+.h40p {height: 40px;}
+.h50p {height: 50px;}
+.h60p {height: 60px;}
+.h70p {height: 70px;}
+.h80p {height: 80px;}
+.h90p {height: 90px;}
+.h100p {height: 100px;}
+.h150p {height: 150px;}
+.h200p {height: 200px;}
+.h250p {height: 250px;}
+.h300p {height: 300px;}
+.h400p {height: 350px;}
+.h450p {height: 400px;}
+.h500p {height: 450px;}
+.h550p {height: 500px;}
+.h600p {height: 550px;}
+.h650p {height: 600px;}
+.h700p {height: 650px;}
+.h750p {height: 700px;}
+.h800p {height: 750px;}
+.h850p {height: 800px;}
+.h900p {height: 850px;}
+.h950p {height: 900px;}
+.h950p {height: 950px;}
+.h1000p {height: 1000px;}
+/* -----------------------------------------------Buttons */
+
+.btn {
+    padding: 8px 0px;
+    width: 100px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
+.btn.vld {
+    background-color: #8FE583;
+}
+
+.btn.anl {
+    background-color: #e2575e;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 5px grey;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+
+/* -----------------------------------------------Media Queries */
+
+@media screen and (max-width: 800px) {
+
+    /*------------------------------------------------Form*/
+    .form {
+        margin: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .form label {
+        min-width: 45%;
+        margin-bottom: 10px;
+        font-size: 0.8em;
+    }
+    .form input {
+        width: 45%;
+        padding: 10px;
+        font-size: 0.6em;
+    }
+    .form input[type="radio"], input[type="checkbox"] {
+        width: 20%;
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 5%;
+        margin: 0;
+    }
+    .form select {
+        width: 45%;
+    }
+    .form button {
+        padding: 10px;
+    }
+    /*------------------------------------------------Tableau*/
+    .table {
+        font-size: 1.7vh;
+        width: 100%;
+    }
+    /*------------------------------------------------Nav*/
+
+    .nav ul li, .nav li a {
+        width: 100%;
+    }
+    .show-menu {
+        display: block;
+    }
+    .nav>ul {
+        display: none;
+    }
+    .nav .hid_ul {
+        display: block;
+    }
+    .nav .hid_ul li a{
+        font-size: 0.8em;
+        box-shadow: inset 0px 1px 0px grey;
+    }
+    .nav .hid_ul li:last-child{
+        border-bottom: 1px solid grey;
+    }
+}
