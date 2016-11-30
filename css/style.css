@@ -46,6 +46,7 @@ div#main-container
 
 aside
 {
+    min-width: 100px;
     width: 20%;
     min-height: calc(100vh - 150px);
     border: 3px solid black;
@@ -97,6 +98,7 @@ article, article *
 section
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 article
@@ -201,6 +203,11 @@ details.text
 
 @media screen and (max-width: 600px)
 {
+    aside
+    {
+        display: none;
+    }
+
     div.text
     {
         display: none;
