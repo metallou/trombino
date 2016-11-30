@@ -125,9 +125,10 @@ div.icons
     justify-content: space-between;
 }
 
-.icons .unused
+.unused, .unused a
 {
-    background-color: #000000;
+    cursor: default;
+    opacity: 0;
 }
 
 .iconsphomail
