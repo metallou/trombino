@@ -5,11 +5,14 @@ let phomail = function() {
     for(let i=0; i<pho.length; i++) {
         pho[i].addEventListener("click", function() {
             document.getElementById(pho[i].id+"n").classList.toggle("selected");
+            console.log(pho[i].id.substr(0,5)+"mail");
+            document.getElementById(pho[i].id.substr(0,5)+"mail").classList.remove("selected");
         });
     }
     for(let i=0; i<mail.length; i++) {
         mail[i].addEventListener("click", function() {
-            document.getElementById(mail[i].id+"t").classList.toggle("selected");
+            document.getElementById(mail[i].id+"l").classList.toggle("selected");
+            document.getElementById(mail[i].id.substr(0,5)+"phon").classList.remove("selected");
         });
     }
 }
