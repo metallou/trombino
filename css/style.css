@@ -150,6 +150,7 @@ div.icons
     position: absolute;
     bottom: 100%;
     right: 0;
+    background-color: #FFFFFF;
 }
 
 .textpho.selected, .textmail.selected
