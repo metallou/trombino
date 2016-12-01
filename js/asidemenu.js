@@ -10,9 +10,11 @@ let changeColor = function(coll, color){
 
 let animatedAsideMenu = function(){
     //Networks
-    let aColl = document.getElementsByClassName("github");
-    let bColl = document.getElementsByClassName("linkedin");
-    let cColl = document.getElementsByClassName("viadeo");
+    let githubColl = document.getElementsByClassName("github");
+    let linkedinColl = document.getElementsByClassName("linkedin");
+    let viadeoColl = document.getElementsByClassName("viadeo");
+    let twitterColl = document.getElementsByClassName("twitter");
+    let facebookColl = document.getElementsByClassName("facebook");
     //Skills
 
     document.getElementById("github").addEventListener('click', function(){
