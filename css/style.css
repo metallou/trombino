@@ -25,7 +25,6 @@ div#wrapper
 
 header
 {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,15 +40,16 @@ div.high_container {
 }
 
 div.reseaux_sociaux {
-  display: flex;
-  justify-content: flex-end;
   border: 2px solid  white;
+  height: 10%;
 }
+
 div.logo_simplon {
   position: absolute;
-  top: 20%;
+  top: 5%;
   left: 2%;
 }
+
 div#main-container
 {
     display: flex;
@@ -57,14 +57,14 @@ div#main-container
     width: 100%;
     margin: auto;
     padding-top: 200px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 aside
 {
     min-width: 100px;
     width: 20%;
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 200px - 100px);
     border: 3px solid black;
     box-sizing: border-box;
 }
@@ -82,12 +82,25 @@ footer
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 100px;
     border: 2px solid black;
+    background-color: #363636;
     box-sizing: border-box;
+    color: white;
 }
 
-h1, footer h2
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  border: 2px solid black;
+  width: 7%;
+  height: 50px;
+}
+
+h1,
 {
     position: absolute;
     top: 50%;
