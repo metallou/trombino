@@ -235,7 +235,7 @@ code {
 .nav>ul li {
     flex: 1;
 }
-.nav li a {
+.nav li a  {
     height: 50px;
     line-height: 50px;
     color: #fff;
@@ -243,7 +243,7 @@ code {
     display: flex;
     justify-content: center;
 }
-.nav li:hover a {
+.nav li:hover a, .nav li:hover {
     background-color: #aaaaaa;
     color: black;
     transition: 0.2s;
@@ -265,7 +265,7 @@ code {
     display: none;
 }
 /*Permet affichage liens Toggle*/
-.nav>ul li a:hover+.hid_ul, .hid_ul:hover {
+.nav>ul li:hover .hid_ul, .hid_ul:hover,.nav>ul li:hover {
     display: block;
     padding: 0;
 }
@@ -385,8 +385,8 @@ code {
 }
 
 /**Grid Media Query**/
-@media all (max-width:768px){
-  .grid>* {
+@media (max-width:768px){
+  .grid [class*="w-"] {
     width:100%;
   }
 }
@@ -608,22 +608,23 @@ code {
 .w80p {width: 80px;}
 .w90p {width: 90px;}
 .w100p {width: 100px;}
-.w150p {width: 200px;}
-.w200p {width: 300px;}
-.w250p {width: 400px;}
-.w300p {width: 500px;}
-.w400p {width: 600px;}
-.w450p {width: 700px;}
-.w500p {width: 800px;}
-.w550p {width: 900px;}
-.w600p {width: 100px;}
-.w650p {width: 200px;}
-.w700p {width: 300px;}
-.w750p {width: 400px;}
-.w800p {width: 500px;}
-.w850p {width: 600px;}
-.w900p {width: 700px;}
-.w950p {width: 800px;}
+.w150p {width: 150px;}
+.w200p {width: 200px;}
+.w250p {width: 250px;}
+.w300p {width: 300px;}
+.w350p {width: 350px;}
+.w400p {width: 400px;}
+.w450p {width: 450px;}
+.w500p {width: 500px;}
+.w550p {width: 550px;}
+.w600p {width: 600px;}
+.w650p {width: 650px;}
+.w700p {width: 700px;}
+.w750p {width: 750px;}
+.w800p {width: 800px;}
+.w850p {width: 850px;}
+.w900p {width: 900px;}
+.w950p {width: 950px;}
 .w1000p {width: 1000px;}
 /*- For those who want some percentage widths, but don't want to bother with the grid*/
 /*1 quarter of its closest ancestor*/
@@ -666,18 +667,18 @@ code {
 .h200p {height: 200px;}
 .h250p {height: 250px;}
 .h300p {height: 300px;}
-.h400p {height: 350px;}
-.h450p {height: 400px;}
-.h500p {height: 450px;}
-.h550p {height: 500px;}
-.h600p {height: 550px;}
-.h650p {height: 600px;}
-.h700p {height: 650px;}
-.h750p {height: 700px;}
-.h800p {height: 750px;}
-.h850p {height: 800px;}
-.h900p {height: 850px;}
-.h950p {height: 900px;}
+.h350p {height: 350px;}
+.h400p {height: 400px;}
+.h450p {height: 450px;}
+.h500p {height: 500px;}
+.h550p {height: 550px;}
+.h600p {height: 600px;}
+.h650p {height: 650px;}
+.h700p {height: 700px;}
+.h750p {height: 750px;}
+.h800p {height: 800px;}
+.h850p {height: 850px;}
+.h900p {height: 900px;}
 .h950p {height: 950px;}
 .h1000p {height: 1000px;}
 /* -----------------------------------------------Buttons */
@@ -758,15 +759,5 @@ code {
     }
     .nav>ul {
         display: none;
-    }
-    .nav .hid_ul {
-        display: block;
-    }
-    .nav .hid_ul li a{
-        font-size: 0.8em;
-        box-shadow: inset 0px 1px 0px grey;
-    }
-    .nav .hid_ul li:last-child{
-        border-bottom: 1px solid grey;
     }
 }

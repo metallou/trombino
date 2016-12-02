@@ -20,7 +20,6 @@ div#wrapper
 {
     min-height: 100%;
     width: 100%;
-    position: relative;
 }
 
 header
@@ -96,22 +95,6 @@ article, article *
 }
 /* */
 
-section
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-article
-{
-    position: relative;
-}
-
-figure
-{
-    position: relative;
-}
-
 figure img
 {
     background-image: url("../images/fond.jpg");
@@ -122,21 +105,10 @@ figure img
     height: 500px;
 }
 
-div.icons
-{
-    display: flex;
-    justify-content: space-between;
-}
-
 .unused, .unused a
 {
     cursor: default;
     opacity: 0;
-}
-
-.iconsphomail
-{
-    position: relative;
 }
 
 .iconpho, .iconmail
@@ -147,7 +119,6 @@ div.icons
 .textpho, .textmail
 {
     display: none;
-    position: absolute;
     bottom: 100%;
     right: 0;
     background-color: #FFFFFF;
@@ -160,17 +131,12 @@ div.icons
 
 div.text
 {
-    position: absolute;
     top: 0;
     left: 0;
     width: 250px;
     height: 500px;
     background: #FFFFFF;
     opacity: 0;
-}
-div.text p
-{
-    position: absolute;
 }
 
 p.texttext
