@@ -53,6 +53,13 @@ div.reseaux_sociaux {
   height: 150px;
 }
 
+.nav {
+  width: 70%;
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+  z-index: 10;
+}
 
 div#main-container
 {
