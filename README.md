@@ -1,6 +1,6 @@
 //Petite aide pour maintenair le code
 
-Il est prévu que chaque personne possède (dans le code) toutes les icones des réseaux sociaux (<span class="iconRESAL"> dans <div class="iconsres">)
+Il est prévu que chaque personne possède (dans le code) toutes les icones des réseaux sociaux (span class="iconRESAL" dans div class="iconsres")
 Si une icone n'est pas utilisée (pas de compte associé à ce résal), elle doit avoir la class "unused" en plus de sa classe "iconRESAL" (ne pas oublier de l'ajouter ou de l'enlever en cas de modification)
 Si une icone n'est pas utilisée, l'attribut 'target' de la balise <a> contenue dans le <span> (correspondant à l'icone) doit valoir "_self" (remttre à "_blank" en cas de modification)
 CELA DONNERA:
@@ -17,7 +17,7 @@ RESAL
 /span
 
 
-Il est prévu que chaque personne possède (dans le code) tous les icones des compétences (<span class="iconSKILL"> dans >div class="iconsskills">)
+Il est prévu que chaque personne possède (dans le code) tous les icones des compétences (span class="iconSKILL" dans div class="iconsskills")
 Si une icone n'est pas utilisée (compétence non maitrisée), elle doit avoir la class "unused" en plus de sa classe "iconSKILL" (ne pas oublier de l'ajouter ou de l'enlever en cas de modification)
 CELA DONNERA:
 span class="iconSKILL unused"
@@ -39,7 +39,7 @@ XX doit être entre 00 et 99 (permettant cent personnes)
 Si plus de cent personnes devaient exister, passer tous les nombres XX de 2 à 3 digits (ex: 12-> 012)
 Egalement (dans js/phomail.js), changer tous les 'substr(0,6)' en 'substr(0,7)'
 
-Il est prévu qye chaque personne possède (dans le code) deux éléments <p class="texttext"> et deux éléments <p class="textquote">
+Il est prévu qye chaque personne possède (dans le code) deux éléments p class="texttext" et deux éléments p class="textquote"
 SI un des champs devait ne pas être rempli, laisser le bloc vide dans le code
 
 (ps: les deux blocs <p> partagneant la même classe n'ont pas obligation à avoir le même contenu)
