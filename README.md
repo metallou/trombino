@@ -75,3 +75,7 @@ Il est prévu qye chaque personne possède (dans le code) deux éléments p clas
 SI un des champs devait ne pas être rempli, laisser le bloc vide dans le code
 
 (ps: les deux blocs <p> partagneant la même classe n'ont pas obligation à avoir le même contenu)
+
+
+
+Tovaritch README pas d'accord avec retour à la ligne, obligé faire texte pas beau
