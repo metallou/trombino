@@ -4,29 +4,29 @@ Il est prévu que chaque personne possède (dans le code) toutes les icones des 
 Si une icone n'est pas utilisée (pas de compte associé à ce résal), elle doit avoir la class "unused" en plus de sa classe "iconRESAL" (ne pas oublier de l'ajouter ou de l'enlever en cas de modification)
 Si une icone n'est pas utilisée, l'attribut 'target' de la balise <a> contenue dans le <span> (correspondant à l'icone) doit valoir "_self" (remttre à "_blank" en cas de modification)
 CELA DONNERA:
-<span class="iconRESAL unused">
-<a target="_self" rel="external" href="#">
+span class="iconRESAL unused"
+a target="_self" rel="external" href="#"
 RESAL
-</a>
-</span>
+/a
+/span
 AU LIEU DE:
-<span class="iconRESAL">
-<a target="_blank" rel="external" href="https://www.siteduresal.com">
+span class="iconRESAL"
+a target="_blank" rel="external" href="https://www.siteduresal.com"
 RESAL
-</a>
-</span>
+/a
+/span
 
 
 Il est prévu que chaque personne possède (dans le code) tous les icones des compétences (<span class="iconSKILL"> dans >div class="iconsskills">)
 Si une icone n'est pas utilisée (compétence non maitrisée), elle doit avoir la class "unused" en plus de sa classe "iconSKILL" (ne pas oublier de l'ajouter ou de l'enlever en cas de modification)
 CELA DONNERA:
-<span class="iconSKILL unused">
+span class="iconSKILL unused"
 SKILL
-</span>
+/span
 AU LIEU DE:
-<span class="iconSKILL">
+span class="iconSKILL"
 SKILL
-</span>
+/span
 
 Il est prévu que chaque personne possède (dans le code) les deux champs téléphone et mail en couple "icon"/"text"
 Si une des informations "text"(pho/mail)n'a pas été renseignée, laisser le bloc (même vide) dans le code
