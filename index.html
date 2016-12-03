@@ -16,12 +16,16 @@
                 <h1>TITRE H1</h1>
             </header>
 
+            <!-- Conteneur central -->
             <div id="main-container">
+                <!-- Menu à gauche utilisé par le script asidemenu.js -->
                 <aside>
+                    <!-- Vider la sélection -->
                     <button id="reset">
                         Reset
                     </button>
                     <hr>
+                    <!-- Sélectionner un réseau social -->
                     <button id="github">
                         GitHub
                     </button>
@@ -32,6 +36,7 @@
                         Viadeo
                     </button>
                     <hr>
+                    <!-- Sélectionner une compétence -->
                     <button id="html">
                         HTML
                     </button>
@@ -45,10 +50,13 @@
                         PHP
                     </button>
                 </aside>
+
+                <!-- corps de la page -->
                 <main>
                 <section class="containflex">
                     <!-- ARLAUD Samuel -->
                     <article class="github linkedin viadeo wordpress twitter facebook html css javascript jquery php porel">
+                        <!-- photo, nom, prénom -->
                         <figure class="porel">
                             <img src="" alt="Samuel_ARLAUD" />
                             <figcaption>
@@ -60,7 +68,9 @@
                             </span>
                             </figcaption>
                         </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
                         <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
                             <div class="iconsres">
                                 <span class="iconlinkedin">
                                     <a target="_blank" rel="external" href="#">
@@ -78,13 +88,16 @@
                                     </a>
                                 </span>
                             </div>
+                            <!-- contact -->
                             <div class="iconsphomail porel">
+                                <!-- icones -->
                                 <span class="iconpho" id="text01pho">
                                     E
                                 </span>
                                 <span class="iconmail" id="text01mai">
                                     F
                                 </span>
+                                <!-- texte affiché par le script phomail.js -->
                                 <span class="textpho poabs" id="text01phon">
                                     00.00.00.00.00
                                 </span>
@@ -93,6 +106,7 @@
                                 </span>
                             </div>
                         </div>
+                        <!-- Compétences -->
                         <div class="iconsskills">
                             <span class="iconhtml">
                                 html
@@ -113,6 +127,7 @@
                                 c
                             </span>
                         </div>
+                        <!-- texte affiché sur l'image (grand écran -->
                         <div class="text poabs">
                             <p class="texttext poabs">
                             Bla
@@ -121,6 +136,7 @@
                             Blu
                             </p>
                         </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
                         <details class="text">
                             <summary>
                             Informations
