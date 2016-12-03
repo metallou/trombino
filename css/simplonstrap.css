@@ -5,7 +5,7 @@ p, blockquote,
 a, big, cite, code,
 em, img,
 small, strike, strong, tt,
-b, u, i,
+u,
 ol, ul, li,
 form, label, legend,
 table,
@@ -42,17 +42,44 @@ img {
     max-width: 100%;
 }
 
+
+
 /* -----------------------------------------------Helper Class */
 
 
 /*** Positions ***/
 
-.porel {
+.relative, .porel, .rel {
     position: relative;
 }
 
-.poabs {
-    position: absolute;
+/*Position absolute - to place object in corners of its closest positioned ancestor- you can use .abs class and fill in value otherwise*/
+
+.abs, .poabs {
+  position: absolute;
+  top: ;
+  right: ;
+}
+
+.abstopright, .abstr, .poabsur {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.abstopleft, .abstl, .poabsul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.absbottomright, .absbr, .poabsdr {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.absbottomleft, .absbl, .poabsdl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .pofix {
@@ -73,48 +100,15 @@ img {
     bottom: 0;
 }
 
-.poabsdl {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.poabsdr {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.poabsul {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.poabsur {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 
 /*** Display ***/
 
-.dblock {
+.dblock, .bl {
     display: block;
 }
 
-.dinblock {
+.dinblock, .inbl {
     display: inline-block;
-}
-
-.dflex {
-    display: flex;
-}
-
-.dflexcenter {
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -151,9 +145,13 @@ img {
   justify-content:space-between;
 }
 
-.dflex-a {
+.dflexsp-a {
   display:flex;
   justify-content:space-around;
+}
+
+.dflex-w {
+  flex-wrap: wrap;
 }
 
 
@@ -190,7 +188,15 @@ img {
   margin-right: auto;
 }
 
-.centert {
+.textleft, .tl, .leftt {
+  text-align: right;;
+}
+
+.textright, .tr, .rightt {
+  text-align: left;
+}
+
+.textcenter, .tc, .centert {
   text-align:center;
 }
 
@@ -227,16 +233,15 @@ code {
 .nav>ul {
     list-style-type: none;
     width: 100%;
-    position: absolute;
     display: flex;
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 .nav>ul li {
     flex: 1;
 }
 .nav li a  {
-    height: 50px;
     line-height: 50px;
     color: #fff;
     background-color: #2f3036;
@@ -252,7 +257,6 @@ code {
 .nav li:hover ul a {
     background-color: #aaaaaa;
     color: #2f3036;
-    height: 50px;
     line-height: 50px;
 }
 /*Hover liens Toggle*/
@@ -263,6 +267,7 @@ code {
 /*Cache liens Toggle*/
 .nav li ul {
     display: none;
+    position: relative;
 }
 /*Permet affichage liens Toggle*/
 .nav>ul li:hover .hid_ul, .hid_ul:hover,.nav>ul li:hover {
@@ -298,90 +303,83 @@ code {
 .grid {
     display: block;
     clear: both;
+    overflow: auto;
 }
 
 /* Cancel spaces between elements*/
 
 .no-space {
-    padding: 0;
+  padding: 0;
 }
 .grid *{
   box-sizing: border-box;
 }
 
+*[class*="w-"],
+.one-twelve,
+.two-twelve,
+.three-twelve,
+.four-twelve,
+.five-twelve,
+.six-twelve,
+.seven-twelve,
+.eight-twelve,
+.nine-twelve,
+.ten-twelve,
+.onze-twelve,
+.twelve-twelve
+{
+  float: left;
+  padding: 10px;
+}
 /* Grid Widths */
 /*--1/12--*/
 .grid .one-twelve, .grid .w-1-12 {
     width: calc(100%/12);
-    float: left;
-    padding: 10px;
 }
 /*--2/12--*/
 .grid .two-twelve, .grid .w-1-6, .grid .w-2-12 {
     width: calc(100%/6);
-    float: left;
-    padding: 10px;
 }
 /*--3/12--*/
 .grid .three-twelve, .grid .w-1-4, .grid .w-3-12 {
-    width: calc(100%/4);
-    float: left;
-    padding: 10px;
+    width: calc(300%/12);
 }
 /*--4/12--*/
 .grid .four-twelve, .grid .w-1-3,.grid .w-2-6, .grid .w-4-12 {
     width: calc(100%/3);
-    float: left;
-    padding: 10px;
 }
 /*--5/12--*/
 .grid .five-twelve, .grid .w-5-12 {
     width: calc(500%/12);
-    float: left;
-    padding: 10px;
 }
 /*--6/12--*/
 .grid .six-twelve, .grid .w-1-2, .grid .w-2-4, .grid .w-3-6, .grid .w-6-12{
     width: 50%;
-    float: left;
-    padding: 10px;
 }
 /*--7/12--*/
 .grid .seven-twelve, .grid .w-7-12 {
     width: calc(700%/12);
-    float: left;
-    padding: 10px;
 }
 /*--8/12--*/
 .grid .eight-twelve, .grid .w-2-3,.grid .w-4-6, .grid .w-8-12 {
     width: calc(200%/3);
-    float: left;
-    padding: 10px;
 }
 /*--9/12--*/
 .grid .nine-twelve, .grid .w-3-4, .grid .w-9-12 {
     width: 75%;
-    float: left;
-    padding-right: 10px;
-    padding-bottom: 10px;
 }
 /*--10/12--*/
 .grid .ten-twelve, .grid .w-5-6, .grid .w-10-12 {
     width: calc(500%/6);
-    float: left;
-    padding: 10px;
 }
 /*--11/12--*/
 .grid .onze-twelve, .grid .w-11-12 {
     width: calc(1100%/12);
-    float: left;
-    padding: 10px;
 }
 /*--12/12--*/
 .grid .twelve-twelve, .grid .w-12-12, .grid .w-1{
     width: 100%;
-    float: left;
-    padding: 10px;
 }
 
 /**Grid Media Query**/
@@ -756,6 +754,7 @@ code {
     }
     .show-menu {
         display: block;
+        width: 100%;
     }
     .nav>ul {
         display: none;
