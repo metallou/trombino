@@ -124,7 +124,12 @@ figure img
     background-color: #FFFFFF;
 }
 
-.textpho.selected, .textmail.selected
+.iconpho:hover+.iconmail>.textmail, .iconmail:hover~.iconpho>.textpho
+{
+    display: none;
+}
+
+.textpho.selected, .textmail.selected, .iconpho:hover>.textpho, .iconmail:hover>.textmail
 {
     display: block;
 }
