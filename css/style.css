@@ -245,6 +245,10 @@ details.text
         display: block;
     }
 
+    .header_txt, .reseaux_sociaux {
+        font-size: 14px;
+    }
+
     header  img {
         height: 10px;
     }
