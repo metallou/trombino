@@ -4,13 +4,13 @@ Il est prévu que chaque personne possède (dans le code) toutes les icones des 
 
 Si une icone n'est pas utilisée (pas de compte associé à ce résal), elle doit avoir la class "unused" en plus de sa classe "iconRESAL" (ne pas oublier de l'ajouter ou de l'enlever en cas de modification)
 
-Si une icone n'est pas utilisée, l'attribut 'target' de la balise <a> contenue dans le <span> (correspondant à l'icone) doit valoir "_self" (remttre à "_blank" en cas de modification)
+Si une icone n'est pas utilisée, l'attribut 'href' de la balise <a> contenue dans le <span> (correspondant à l'icone) doit être supprimé
 
 CELA DONNERA:
 
 span class="iconRESAL unused"
 
-a target="_self" rel="external" href="#"
+a target="_blank" rel="external"
 
 RESAL
 
