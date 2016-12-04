@@ -66,10 +66,20 @@ div#main-container
 aside
 {
     min-width: 100px;
-    width: 20%;
     min-height: calc(100vh - 150px);
     border: 3px solid black;
     box-sizing: border-box;
+}
+
+aside#asideblank
+{
+
+}
+
+aside#asidemenu
+{
+    position: fixed;
+    width: 100px;
 }
 
 main
