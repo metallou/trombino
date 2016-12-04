@@ -6,18 +6,30 @@ a, big, cite, code,
 em, img,
 small, strike, strong, tt,
 b, u, i,
+
+u,
+
 ol, ul, li,
 form, label, legend,
 table,
 article, aside, canvas,
 figure, figcaption, footer, header,
 menu, nav, output, section {
+
   margin: 0;
   padding: 0;
   border: 0;
 	font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
 }
 /* hyphens & too long words go to next line */
 div, textarea, table, td, th, code, pre, samp {
@@ -30,22 +42,33 @@ div, textarea, table, td, th, code, pre, samp {
 }
 /*To remove bullets from bulleted lists*/
 ul, li {
+
 	list-style: none;
 }
 /*To remove underlining or any other effect on links*/
 a, a:target, a:visited, a:active {
   text-decoration: none;
   color: black;
+
+    list-style: none;
+}
+/*To remove underlining or any other effect on links*/
+a, a:target, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+
 }
 
 img {
     max-width: 100%;
 }
 
+
 /* -----------------------------------------------Helper Class */
 
 
 /*** Positions ***/
+
 
 .porel {
     position: relative;
@@ -59,9 +82,15 @@ img {
     position: fixed;
 }
 
+
+.relative, .rel, .porel {
+    position: relative;
+}
+
 .postat {
     position: static;
 }
+
 
 .pofixup {
     position: fixed;
@@ -115,6 +144,112 @@ img {
 .dflexcenter {
     display: flex;
     justify-content: center;
+
+/* Position absolute */
+
+.abs, .poabs {
+    position: absolute;
+}
+
+.abstop, .abst {
+    position: absolute;
+    top: 0;
+}
+.absbottom, .absb {
+    position: absolute;
+    bottom: 0;
+}
+.absleft, .absl {
+    position: absolute;
+    left: 0;
+}
+.absright, .absr {
+    position: absolute;
+    right: 0;
+}
+.abstopright, .abstr, .poabsur {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.abstopleft, .abstl, .poabsul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.absbottomright, .absbr, .poabsdr {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.absbottomleft, .absbl, .poabsdl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Fixed position - to place an object fixed in the viewport */
+
+.fix, .pofix {
+    position: fixed;
+}
+.fixtop, .fixt {
+    position: fixed;
+    top: 0;
+}
+.fixbottom, .fixb {
+    position: fixed;
+    bottom: 0;
+}
+.fixleft, .fixl {
+    position: fixed;
+    left: 0;
+}
+.fixright, .fixr {
+    position: fixed;
+    right: 0;
+}
+.fixtopright, .fixtr {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.fixtopleft, .fixtl {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.fixbottomright, .fixbr {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.fixbottomleft, .fixbl {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.fixtop, .fixt,.pofixup {
+    position: fixed;
+    top: 0;
+}
+
+.fixbottom, .fixb, .pofixdown {
+    position: fixed;
+    bottom: 0;
+}
+
+
+/*** Display ***/
+
+.dblock, .bl {
+    display: block;
+}
+
+.dinblock, .inbl {
+    display: inline-block;
+
 }
 
 
@@ -138,6 +273,7 @@ img {
 
 /*** Flex properties ***/
 .dflex {
+
   display:flex;
 }
 
@@ -154,6 +290,26 @@ img {
 .dflex-a {
   display:flex;
   justify-content:space-around;
+}
+
+.dflexcenter {
+    display:flex;
+    justify-content:center;
+}
+
+.dflexsp-b {
+    display:flex;
+    justify-content:space-between;
+}
+
+.dflexsp-a {
+    display:flex;
+    justify-content:space-around;
+}
+
+.dflex-w {
+    flex-wrap: wrap;
+
 }
 
 
@@ -199,6 +355,23 @@ img {
   border-radius:0.4em;
 }
 
+.textleft, .tl, .leftt {
+    text-align: left;
+}
+
+.textright, .tr, .rightt {
+    text-align: right;
+}
+
+.textcenter, .tc, .centert {
+    text-align: center;
+}
+
+.textjustify, .tj {
+    text-align: justify;
+}
+
+
 /*** Defaults Colors & background ***/
 .color {
   color: blue;
@@ -206,7 +379,9 @@ img {
 
 .bg {
   background: #dedede;
+  color: blue;
 }
+
 
 
 /* -----------------------------------------------General Styles */
@@ -221,6 +396,7 @@ code {
 /* -----------------------------------------------Navigation Bar */
 
 /* Navigation Bar*/
+
 .nav {
     width: 100%;
 }
@@ -232,10 +408,21 @@ code {
     margin: 0;
     padding: 0;
 }
+
+.nav>ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
 .nav>ul li {
     flex: 1;
 }
-.nav li a {
+
+.nav li a  {
     height: 50px;
     line-height: 50px;
     color: #fff;
@@ -243,18 +430,21 @@ code {
     display: flex;
     justify-content: center;
 }
-.nav li:hover a {
+
+.nav li:hover a, .nav li:hover {
     background-color: #aaaaaa;
     color: black;
     transition: 0.2s;
 }
+
 /*Liens Toggle*/
 .nav li:hover ul a {
     background-color: #aaaaaa;
     color: #2f3036;
-    height: 50px;
     line-height: 50px;
+    height: 50px;
 }
+
 /*Hover liens Toggle*/
 .nav li:hover ul a:hover {
     background-color: #e2575e;
@@ -266,6 +456,11 @@ code {
 }
 /*Permet affichage liens Toggle*/
 .nav>ul li a:hover+.hid_ul, .hid_ul:hover {
+    
+}
+/*Permet affichage liens Toggle*/
+.nav>ul li:hover .hid_ul, .hid_ul:hover,.nav>ul li:hover {
+    position: relative;
     display: block;
     padding: 0;
 }
@@ -283,6 +478,10 @@ code {
     display: block;
 }
 
+.clearnav{
+    padding-top: 50px;
+}
+
 /* -----------------------------------------------Grid */
 
 /*- The Responsive Grid */
@@ -298,6 +497,7 @@ code {
 .grid {
     display: block;
     clear: both;
+    overflow: auto;
 }
 
 /* Cancel spaces between elements*/
@@ -389,6 +589,81 @@ code {
   .grid [class*="w-"] {
     width:100%;
   }
+
+    box-sizing: border-box;
+}
+
+.grid *[class*="w-"], .grid *[class*="-twelve"] {
+    float: left;
+    padding: 10px;
+}
+/* Widths in relative values, to use within, or out of the grid*/
+/*--1/12--*/
+.one-twelve, .w-1-12 {
+    width: calc(100%/12);
+}
+/*--2/12--*/
+.two-twelve, .w-1-6, .w-2-12 {
+    width: calc(100%/6);
+}
+/*--3/12--*/
+.three-twelve, .w-1-4, .w-3-12 {
+    width: 25%;
+}
+/*--4/12--*/
+.four-twelve, .w-1-3, .w-2-6, .w-4-12 {
+    width: calc(100%/3);
+}
+/*--5/12--*/
+.five-twelve, .w-5-12 {
+    width: calc(500%/12);
+}
+/*--6/12--*/
+.six-twelve, .w-1-2, .w-2-4, .w-3-6, .w-6-12{
+    width: 50%;
+}
+/*--7/12--*/
+.seven-twelve, .w-7-12 {
+    width: calc(700%/12);
+}
+/*--8/12--*/
+.eight-twelve, .w-2-3, .w-4-6, .w-8-12 {
+    width: calc(200%/3);
+}
+/*--9/12--*/
+.nine-twelve, .w-3-4, .w-9-12 {
+    width: 75%;
+}
+/*--10/12--*/
+.ten-twelve, .w-5-6, .w-10-12 {
+    width: calc(500%/6);
+}
+/*--11/12--*/
+.onze-twelve, .w-11-12 {
+    width: calc(1100%/12);
+}
+/*--12/12--*/
+.twelve-twelve, .w-12-12, .w-1{
+    width: 100%;
+}
+/** Moar width**/
+/*1 Tenth of its closest ancestor*/
+.w-1-10 {
+    width: 10%;
+}
+/*1 quarter of its closest ancestor*/
+.w-1-8 {
+    width: 12.5%;
+}
+/*1 fifth of its closest ancestor*/
+.w-1-5 {
+    width: 20%;
+}
+/**Grid Media Query**/
+@media (max-width:768px){
+    .grid [class*="w-"] {
+        width:100%;
+    }
 }
 
 /* ----------------------------------------------- FlexGrid */
@@ -585,6 +860,7 @@ code {
 
 /*class to round elements*/
 .rounded {
+
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -594,6 +870,16 @@ code {
   -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+/*class to make circle elements*/
+.circle {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+
 }
 
 /*-Elements sizes*/
@@ -626,6 +912,7 @@ code {
 .w900p {width: 900px;}
 .w950p {width: 950px;}
 .w1000p {width: 1000px;}
+
 /*- For those who want some percentage widths, but don't want to bother with the grid*/
 /*1 quarter of its closest ancestor*/
 .w-1-4 {
@@ -712,6 +999,12 @@ code {
 
 /* -----------------------------------------------Media Queries */
 
+@media screen and (max-width: 1100px) {
+    .nav {
+        font-size: 1.5vw;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     /*------------------------------------------------Form*/
@@ -751,15 +1044,21 @@ code {
     }
     /*------------------------------------------------Nav*/
 
+    .nav {
+        font-size: 1em;
+    }
+
     .nav ul li, .nav li a {
         width: 100%;
     }
     .show-menu {
         display: block;
+        width: 100%;
     }
     .nav>ul {
         display: none;
     }
+
     .nav .hid_ul {
         display: block;
     }
@@ -770,4 +1069,5 @@ code {
     .nav .hid_ul li:last-child{
         border-bottom: 1px solid grey;
     }
+
 }

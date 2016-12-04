@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Projet SIMPLonMARS3 - Trombinonoscope Promo 3">
+        <meta name="author" content="Camille, Kevin, Sophie">
         <title>Trombinoscope</title>
         <link rel="stylesheet" href="css/simplonstrap.css">
         <link rel="stylesheet" href="css/style.css">
@@ -11,11 +13,11 @@
     </head>
     <body>
 
-        <div id="wrapper">
+         <div id="wrapper" class="porel">
             <header class="poabs w-1-1 h200p">
 
                   <div class="reseaux_sociaux poabsur"
-                    <p>Nos réseaux sociaux:</p>
+                    <p> Nos réseaux sociaux:</p>
                     <a href="http://twitter.fr"><img class="" alt="logo twitter" /></a>
                     <a href="http://facebook.fr"><img class="" alt="logo facebook" /></a>
                     <a href="mailto:simplonmars@centrale-marseille.fr"><img class="" alt="mail" /></a>
@@ -45,15 +47,25 @@
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Login</a></li>
                     <label for="show-menu" class="show-menu">Fermer ↑</label>
-  <input type="checkbox" id="show-menu" role="button">
+                    <input type="checkbox" id="show-menu" role="button">
                   </ul>
 
                 </nav>
 
+
+       
             </header>
 
-            <div id="main-container">
-                <aside>
+            <!-- Conteneur central -->
+            <div id="main-container" class="dflex centerm">
+                <!-- Menu à gauche utilisé par le script asidemenu.js -->
+                <aside id="asidemenu" class="fixleft dflex">
+                    <!-- Vider la sélection -->
+                    <button id="reset">
+                        Reset
+                    </button>
+                    <hr>
+                    <!-- Sélectionner un réseau social -->
                     <button id="github">
                         GitHub
                     </button>
@@ -63,260 +75,2530 @@
                     <button id="viadeo">
                         Viadeo
                     </button>
-                    <button id="reset">
-                        Reset
+                    <button id="twitter">
+                        Twitter
+                    </button>
+                    <hr>
+                    <!-- Sélectionner une compétence -->
+                    <button id="html">
+                        HTML
+                    </button>
+                    <button id="css">
+                        CSS
+                    </button>
+                    <button id="javascript">
+                        JavaScript
+                    </button>
+                    <button id="php">
+                        PHP
+                    </button>
+                    <button id="c">
+                        C
                     </button>
                 </aside>
-                <main>
-                <!-- Blocs de tests à effacer du rendu -->
-                <div class="github"></div>
-                <div class="linkedin"></div>
-                <div class="viadeo"></div>
-                <div class="viadeo"></div>
-                <div class="github"></div>
-                <div class="linkedin"></div>
-                <div class="linkedin"></div>
-                <div class="viadeo"></div>
-                <div class="github"></div>
-                <!-- -->
-                <section>
-                    <article>
-                        <figure>
-                            <img src="" alt="" />
+
+                <aside id="asideblank">
+                </aside>
+
+                <!-- corps de la page -->
+                <main class="colnorm">
+                <section class="containflex">
+                    <!-- ARLAUD Samuel -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Samuel_ARLAUD" />
                             <figcaption>
-                            NAME
+                            <span class="surname">
+                                Samuel
+                            </span>
+                            <span class="name">
+                                ARLAUD
+                            </span>
                             </figcaption>
                         </figure>
-                        <div class="icons">
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
                             <div class="iconsres">
-                                <span class="iconlinkedin">
-                                    <a href="#">
-                                        A
-                                    </a>
-                                </span>
-                                <span class="iconviadeo">
-                                    <a href="#">
-                                        B
-                                    </a>
-                                </span>
                                 <span class="icongithub">
-                                    <a href="#">
-                                        C
+                                    <a target="_blank" rel="external" href="https://github.com/Darkilen">
+                                        A
                                     </a>
                                 </span>
-                            </div>
-                            <div class="iconsphomail">
-                                <span class="iconpho" id="text1pho">
-                                    E
-                                </span>
-                                <span class="iconmail" id="text1mai">
-                                    F
-                                </span>
-                                <span class="textpho" id="text1phon">
-                                    00.00.00.00.00
-                                </span>
-                                <span class="textmail" id="text1mail">
-                                    example@example.net
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skills">
-                                <span class="iconhtml">
-                                    html
-                                </span>
-                                <span class="iconcss">
-                                    css
-                                </span>
-                                <span class="iconjavascript">
-                                    javascript
-                                </span>
-                                <span class="iconjquery">
-                                    jquery
-                                </span>
-                                <span class="iconphp">
-                                    php
-                                </span>
-                                <span class="iconc">
-                                    c
-                                </span>
-                        </div>
-                        <div class="text">
-                            <p class="texttext">
-                            Bla
-                            </p>
-                            <p class="textquote">
-                                Blu
-                            </p>
-                        </div>
-                        <details class="text">
-                            <summary>
-                            Prout
-                            </summary>
-                            <p class="texttext">
-                            Bla
-                            </p>
-                            <p class="textquote">
-                                Blu
-                            </p>
-                        </details>
-                    </article>
-                    <article class="linkedin">
-                        <figure>
-                            <img src="photos/Black_Metal_Barbies.jpg" alt="" />
-                            <figcaption>
-                            NAME
-                            </figcaption>
-                        </figure>
-                        <div class="icons">
-                            <div class="iconsres">
-                                <span class="iconlinkedin">
-                                    <a href="#">
-                                        A
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
                                     </a>
                                 </span>
                                 <span class="iconviadeo unused">
-                                    <a href="#">
-                                        B
-                                    </a>
-                                </span>
-                                <span class="icongithub">
-                                    <a href="#">
+                                    <a target="_blank" rel="external">
                                         C
                                     </a>
                                 </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
                             </div>
-                            <div class="iconsphomail">
-                                <span class="iconpho" id="text2pho">
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text01pho">
                                     E
+                                    <span class="textpho absright" id="text01phon">
+                                        00.00.00.00.00
+                                    </span>
                                 </span>
-                                <span class="iconmail" id="text2mai">
+                                <span class="iconmail" id="text01mai">
                                     F
-                                </span>
-                                <span class="textpho" id="text2phon">
-                                    00.00.00.00.00
-                                </span>
-                                <span class="textmail" id="text2mail">
-                                    example@example.net
+                                    <span class="textmail absright" id="text01mail">
+                                        example@example.net
+                                    </span>
                                 </span>
                             </div>
                         </div>
-                        <div class="skills">
-                                <span class="iconhtml">
-                                    html
-                                </span>
-                                <span class="iconcss">
-                                    css
-                                </span>
-                                <span class="iconjavascript">
-                                    javascript
-                                </span>
-                                <span class="iconjquery">
-                                    jquery
-                                </span>
-                                <span class="iconphp unused">
-                                    php
-                                </span>
-                                <span class="iconc">
-                                    c
-                                </span>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
                         </div>
-                        <div class="text">
-                            <p class="texttext">
-                            Bla
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
                             </p>
-                            <p class="textquote">
-                                Blu
+                            <p class="textquote absbottomright textright">
+                            
                             </p>
                         </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
                         <details class="text">
                             <summary>
-                            Prout
+                            Informations
                             </summary>
-                            <p class="texttext">
-                            Bla
+                            <p class="texttest textleft">
+                            
                             </p>
-                            <p class="textquote">
-                                Blu
+                            <p class="textquote textright">
+                            
                             </p>
                         </details>
                     </article>
-                    <article class="viadeo">
-                        <figure>
-                            <img src="photos/Black_Metal_Barbies.jpg" alt="" />
+
+                    <!-- AZLI Fodil -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Fodil AZLI" />
                             <figcaption>
-                            NAME
+                            <span class="surname">
+                                Fodil
+                            </span>
+                            <span class="name">
+                                AZLI
+                            </span>
                             </figcaption>
                         </figure>
-                        <div class="icons">
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
                             <div class="iconsres">
-                                <span class="iconlinkedin unused">
-                                    <a href="#">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/kintaro10">
                                         A
                                     </a>
                                 </span>
-                                <span class="iconviadeo">
-                                    <a href="#">
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
                                         B
                                     </a>
                                 </span>
-                                <span class="icongithub">
-                                    <a href="#">
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
                                         C
                                     </a>
                                 </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
                             </div>
-                            <div class="iconsphomail">
-                                <span class="iconpho" id="text3pho">
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text02pho">
                                     E
+                                    <span class="textpho absright" id="text02phon">
+                                        00.00.00.00.00
+                                    </span>
                                 </span>
-                                <span class="iconmail" id="text3mai">
+                                <span class="iconmail" id="text02mai">
                                     F
-                                </span>
-                                <span class="textpho" id="text3phon">
-                                    00.00.00.00.00
-                                </span>
-                                <span class="textmail" id="text3mail">
-                                    example@example.net
+                                    <span class="textmail absright" id="text02mail">
+                                        example@example.net
+                                    </span>
                                 </span>
                             </div>
                         </div>
-                        <div class="skills">
-                                <span class="iconhtml">
-                                    html
-                                </span>
-                                <span class="iconcss">
-                                    css
-                                </span>
-                                <span class="iconjavascript">
-                                    javascript
-                                </span>
-                                <span class="iconjquery unused">
-                                    jquery
-                                </span>
-                                <span class="iconphp">
-                                    php
-                                </span>
-                                <span class="iconc unused">
-                                    c
-                                </span>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
                         </div>
-                        <div class="text">
-                            <p class="texttext">
-                            Bla
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
                             </p>
-                            <p class="textquote">
-                                Blu
+                            <p class="textquote absbottomright textright">
+                            
                             </p>
                         </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
                         <details class="text">
                             <summary>
-                            Prout
+                            Informations
                             </summary>
-                            <p class="texttext">
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- BARBIER Jean-Jacques -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Jean-Jacques BARBIER" />
+                            <figcaption>
+                            <span class="surname">
+                                Jean-Jacques
+                            </span>
+                            <span class="name">
+                                BARBIER
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/jethro13">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text03pho">
+                                    E
+                                    <span class="textpho absright" id="text03phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text03mai">
+                                    F
+                                    <span class="textmail absright" id="text03mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- BERGMAN Laurene -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Laurene_BERGMAN" />
+                            <figcaption>
+                            <span class="surname">
+                                Laurène
+                            </span>
+                            <span class="name">
+                                BERGMAN
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/githly">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text04pho">
+                                    E
+                                    <span class="textpho absright" id="text04phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text04mai">
+                                    F
+                                    <span class="textmail absright" id="text04mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            MANGER
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            MANGER
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- BOUGHANMI Ryhad -->
+                    <article class="github linkedin twitter html css javascript php porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Ryhad_BOUGHANMI" />
+                            <figcaption>
+                            <span class="surname">
+                                Ryhad
+                            </span>
+                            <span class="name">
+                                BOUGHANMI
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/RyderBlack">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://fr.linkedin.com/in/boughanmiryhad">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter">
+                                    <a target="_blank" rel="external" href="https://twitter.com/RyhadB">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text05pho">
+                                    E
+                                    <span class="textpho absright" id="text05phon">
+                                        06 95 91 48 95
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text05mai">
+                                    F
+                                    <span class="textmail absright" id="text05mail">
+                                        ryhad.boughanmi@gmail.com
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            Warrior in a Kata field of the programming land
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Warrior in a Kata field of the programming land
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- BRODIN Elise -->
+                    <article class="github linkedin twitter html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Elise_BRODIN" />
+                            <figcaption>
+                            <span class="surname">
+                                Élise
+                            </span>
+                            <span class="name">
+                                BRODIN
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/eukavlin">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/elise-m-brodin">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter">
+                                    <a target="_blank" rel="external" href="http://twitter.com/eukavlin">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text06pho">
+                                    E
+                                    <span class="textpho absright" id="text06phon">
+                                        07 60 76 32 05
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text06mai">
+                                    F
+                                    <span class="textmail absright" id="text06mail">
+                                        brodin.elise@gmail.com
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            Future web dev
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            “Un jour, il nous faudra bien répondre à notre véritable vocation, qui n'est pas de produire et de consommer sans fin, mais d'aimer, d'admirer et de prendre soin de la vie sous toutes ses formes.”<br>-Pierre RABHI-
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Future web dev
+                            </p>
+                            <p class="textquote textright">
+                            “Un jour, il nous faudra bien répondre à notre véritable vocation, qui n'est pas de produire et de consommer sans fin, mais d'aimer, d'admirer et de prendre soin de la vie sous toutes ses formes.”<br>-Pierre RABHI-
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- CASTEJON Kevin -->
+                    <article class="github linkedin viadeo html css javascript c porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Kevin_CASTEJON" />
+                            <figcaption>
+                            <span class="surname">
+                                Kévin
+                            </span>
+                            <span class="name">
+                                CASTEJON
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/metallou">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/k%C3%A9vin-castejon-61925a134">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="http://www.viadeo.com/p/00217theqtjhg17j">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text07pho">
+                                    E
+                                    <span class="textpho absright" id="text07phon">
+                                        06 47 49 37 37
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text07mai">
+                                    F
+                                    <span class="textmail absright" id="text07mail">
+                                        kevincastejon13@gmail.com
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            Passionné de code comme de musique, perfectionniste dans l'âme
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            “Dans le doute, reboot<br>Quand ça rate, formate”
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Passionné de code comme de musique, perfectionniste dans l'âme
+                            </p>
+                            <p class="textquote textright">
+                            “Dans le doute, reboot<br>Quand ça rate, formate”
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- CHABANE Ibni-Yamine -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Ibni-Yamine_CHABANE" />
+                            <figcaption>
+                            <span class="surname">
+                                Ibni-Yamine
+                            </span>
+                            <span class="name">
+                                CHABANE
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/nejimaru">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text08pho">
+                                    E
+                                    <span class="textpho absright" id="text08phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text08mai">
+                                    F
+                                    <span class="textmail absright" id="text08mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
                             Bla
                             </p>
-                            <p class="textquote">
-                                Blu
+                            <p class="textquote absbottomright textright">
+                            Blu
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Bla
+                            </p>
+                            <p class="textquote textright">
+                            Blu
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- DISSAIS Valentin -->
+                    <article class="github linkedin html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Valentin_DISSAIS" />
+                            <figcaption>
+                            <span class="surname">
+                                Valentin
+                            </span>
+                            <span class="name">
+                                DISSAIS
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/valdiss">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://fr.linkedin.com/in/valentin-dissais-45907212a">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text09pho">
+                                    E
+                                    <span class="textpho absright" id="text09phon">
+                                        06 64 15 90 47
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text09mai">
+                                    F
+                                    <span class="textmail absright" id="text09mail">
+                                        valentin.dissais@gmail.com
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            Méticuleux et rigoureux
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            “Have you tried turning it off and on again?”<br>-ITCrowd-
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Méticuleux et rigoureux
+                            </p>
+                            <p class="textquote textright">
+                            “Have you tried turning it off and on again?”<br>-ITCrowd-
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- DRANSFIELD Alice -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Alice_DRANSFIELD" />
+                            <figcaption>
+                            <span class="surname">
+                                Alice
+                            </span>
+                            <span class="name">
+                                DRANSFIELD
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/eleutheros84">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text10pho">
+                                    E
+                                    <span class="textpho absright" id="text10phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text10mai">
+                                    F
+                                    <span class="textmail absright" id="text10mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- DUBOST Alexandra -->
+                    <article class="github linkedin twitter html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Alexandra_DUBOST" />
+                            <figcaption>
+                            <span class="surname">
+                                Alexandre
+                            </span>
+                            <span class="name">
+                                DUBOST
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/alexandradra">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://fr.linkedin.com/in/alexandra-dubost">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter">
+                                    <a target="_blank" rel="external" href="https://twitter.com/Alexandradra_">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text11pho">
+                                    E
+                                    <span class="textpho absright" id="text11phon">
+                                        RAS
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text11mai">
+                                    F
+                                    <span class="textmail absright" id="text11mail">
+                                        alexandra.dubost@gmail.com
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            “Everything small is just a smaller version of something big !”
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            “Everything small is just a smaller version of something big !”
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- FRANCIA Camille -->
+                    <article class="github linkedin html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Camille_FRANCIA" />
+                            <figcaption>
+                            <span class="surname">
+                                Camille
+                            </span>
+                            <span class="name">
+                                FRANCIA
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/cams03">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/camille-francia-b4b616a6">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text20pho">
+                                    E
+                                    <span class="textpho absright" id="text20phon">
+                                        06 40 22 46 68
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text20mai">
+                                    F
+                                    <span class="textmail absright" id="text20mail">
+                                        camille.francia@hotmail.fr
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            découvrir l’univers du développement et en acquérir les compétences est pour moi un nouveau challenge !!
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            découvrir l’univers du développement et en acquérir les compétences est pour moi un nouveau challenge !!
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- GUILLOT Jessica -->
+                    <article class="github linkedin viadeo twitter html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Jessica_GUILLOT" />
+                            <figcaption>
+                            <span class="surname">
+                                Jessica
+                            </span>
+                            <span class="name">
+                                GUILLOT
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/GuillotJessica">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/Jessica-Guillot">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="http://www.viadeo.com/p/0024urrry8jh0zw">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter">
+                                    <a target="_blank" rel="external" href="https://twitter.com/babaorhum001">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text13pho">
+                                    E
+                                    <span class="textpho absright" id="text13phon">
+                                        06 38 66 88 24
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text13mai">
+                                    F
+                                    <span class="textmail absright" id="text13mail">
+                                        guillotjessicab@gmail.com
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            Developpeuse superstar en devenir
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Developpeuse superstar en devenir
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- HAMIDI Okba -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Okba_HAMIDI" />
+                            <figcaption>
+                            <span class="surname">
+                                Okba
+                            </span>
+                            <span class="name">
+                                HAMIDI
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/acceleratorlastorder">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text14pho">
+                                    E
+                                    <span class="textpho absright" id="text14phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text14mai">
+                                    F
+                                    <span class="textmail absright" id="text14mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- HAUGER Felix -->
+                    <article class="github linkedin html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Felix_HAUGER" />
+                            <figcaption>
+                            <span class="surname">
+                                Félix
+                            </span>
+                            <span class="name">
+                                HAUGER
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/GLoSL">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/f%C3%A9lix-hauger-425263134">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text15pho">
+                                    E
+                                    <span class="textpho absright" id="text15phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text15mai">
+                                    F
+                                    <span class="textmail absright" id="text15mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- KHELIFI Linda -->
+                    <article class="github linkedin viadeo twitter html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Linda_KHELIFI" />
+                            <figcaption>
+                            <span class="surname">
+                                Linda
+                            </span>
+                            <span class="name">
+                                KHELIFI
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/likhe">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/khelifi-linda-a6120822">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="http://www.viadeo.com/p/0021sbm3mnxofzz3">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter">
+                                    <a target="_blank" rel="external" href="https://twitter.com/likhelifi">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text16pho">
+                                    E
+                                    <span class="textpho absright" id="text16phon">
+                                        06 83 40 52 41
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text16mai">
+                                    F
+                                    <span class="textmail absright" id="text16mail">
+                                        likhelifi@laposte.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            Apprentie web-trotteuse
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            “Qui veut voyager loin ménage sa monture.”<br>-Jean Racine-
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Apprentie web-trotteuse
+                            </p>
+                            <p class="textquote textright">
+                            “Qui veut voyager loin ménage sa monture.”<br>-Jean Racine-
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- KHOUS Mohamed -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Mohamed_KHOUS" />
+                            <figcaption>
+                            <span class="surname">
+                                Mohamed
+                            </span>
+                            <span class="name">
+                                KHOUS
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/khousayoub">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text17pho">
+                                    E
+                                    <span class="textpho absright" id="text17phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text17mai">
+                                    F
+                                    <span class="textmail absright" id="text17mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- MAACHAOUI Seifeddine -->
+                    <article class="github linkedin html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Seifeddine_MAACHAOUI" />
+                            <figcaption>
+                            <span class="surname">
+                                Seifeddine
+                            </span>
+                            <span class="name">
+                                MAACHAOUI
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/Seifujin">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://fr.linkedin.com/in/seifeddine-maachaoui">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text18pho">
+                                    E
+                                    <span class="textpho absright" id="text18phon">
+                                        06 64 69 28 55
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text18mai">
+                                    F
+                                    <span class="textmail absright" id="text18mail">
+                                        maachaoui.seifeddine13@outlook.fr
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            Jeune développeur en herbe, j’arpente le chemin du web aussi immense soit-il en quête de connaissances et de savoir-faire
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            "Il faut savoir voir au-delà de ce que notre esprit peut croire"
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Jeune développeur en herbe, j’arpente le chemin du web aussi immense soit-il en quête de connaissances et de savoir-faire
+                            </p>
+                            <p class="textquote textright">
+                            "Il faut savoir voir au-delà de ce que notre esprit peut croire"
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- MAGNIN Julien -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Julien_MAGNIN" />
+                            <figcaption>
+                            <span class="surname">
+                                Julien
+                            </span>
+                            <span class="name">
+                                MAGNIN
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/MS-DOS1999">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text19pho">
+                                    E
+                                    <span class="textpho absright" id="text19phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text19mai">
+                                    F
+                                    <span class="textmail absright" id="text19mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- MARTEL Sophie -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Sophie_MARTEL" />
+                            <figcaption>
+                            <span class="surname">
+                                Sophie
+                            </span>
+                            <span class="name">
+                                MARTEL
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/MartelSophie">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text12pho">
+                                    E
+                                    <span class="textpho absright" id="text12phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text12mai">
+                                    F
+                                    <span class="textmail absright" id="text12mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- MONTEL Sylvain -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Sylvain_MONTEL" />
+                            <figcaption>
+                            <span class="surname">
+                                Sylvain
+                            </span>
+                            <span class="name">
+                                MONTEL
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/smontel">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text21pho">
+                                    E
+                                    <span class="textpho absright" id="text21phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text21mai">
+                                    F
+                                    <span class="textmail absright" id="text21mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- RAHOU Jamil -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Jamil_RAHOU" />
+                            <figcaption>
+                            <span class="surname">
+                                Jamil
+                            </span>
+                            <span class="name">
+                                RAHOU
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/2hill">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text22pho">
+                                    E
+                                    <span class="textpho absright" id="text22phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text22mai">
+                                    F
+                                    <span class="textmail absright" id="text22mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- SCHMIDT Jonathan -->
+                    <article class="html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Jonathan_SCHMIDT" />
+                            <figcaption>
+                            <span class="surname">
+                                Jonathan
+                            </span>
+                            <span class="name">
+                                SCHMIDT
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub unused">
+                                    <a target="_blank" rel="external">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text23pho">
+                                    E
+                                    <span class="textpho absright" id="text23phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text23mai">
+                                    F
+                                    <span class="textmail absright" id="text23mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            “Plus Rapide, Plus Fort, Plus Efficace… Admire ma Perfection“<br>-Corrosion UT2K4-
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            “Plus Rapide, Plus Fort, Plus Efficace… Admire ma Perfection“<br>-Corrosion UT2K4-
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- TAILLEUR Cesar -->
+                    <article class="github linkedin viadeo html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Cesar_TAILLEUR" />
+                            <figcaption>
+                            <span class="surname">
+                                César
+                            </span>
+                            <span class="name">
+                                TAILLEUR
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/johnnydoubt">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin">
+                                    <a target="_blank" rel="external" href="https://www.linkedin.com/in/c%C3%A9sar-tailleur-ab3973133">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo">
+                                    <a target="_blank" rel="external" href="http://www.viadeo.com/p/002lsxh8i21lmi3">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text24pho">
+                                    E
+                                    <span class="textpho absright" id="text24phon">
+                                        RAS
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text24mai">
+                                    F
+                                    <span class="textmail absright" id="text24mail">
+                                        cesar.tailleur@gmail.com
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            Est tombé dans le code récemment et s’y sent très bien! Prêt à en découdre
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            “Le pessimiste se plaint du vent<br>l’optimiste s’attend à ce qu’il change<br>le réaliste ajuste les voiles !”<br>-William A. WARD-
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            Est tombé dans le code récemment et s’y sent très bien! Prêt à en découdre
+                            </p>
+                            <p class="textquote textright">
+                            “Le pessimiste se plaint du vent<br>l’optimiste s’attend à ce qu’il change<br>le réaliste ajuste les voiles !”<br>-William A. WARD-
+                            </p>
+                        </details>
+                    </article>
+
+                    <!-- VANHOVE-LAMON Mario -->
+                    <article class="github html css javascript porel">
+                        <!-- photo, nom, prénom -->
+                        <figure class="porel">
+                            <img src="" alt="Mario_VANHOVE-LAMON" />
+                            <figcaption>
+                            <span class="surname">
+                                Mario
+                            </span>
+                            <span class="name">
+                                VANHOVE-LAMON
+                            </span>
+                            </figcaption>
+                        </figure>
+                        <!-- Icones (réseaux sociaux et contact) -->
+                        <div class="icons dflexsp-b">
+                            <!-- réseaux sociaux -->
+                            <div class="iconsres">
+                                <span class="icongithub">
+                                    <a target="_blank" rel="external" href="https://github.com/mariolamon">
+                                        A
+                                    </a>
+                                </span>
+                                <span class="iconlinkedin unused">
+                                    <a target="_blank" rel="external">
+                                        B
+                                    </a>
+                                </span>
+                                <span class="iconviadeo unused">
+                                    <a target="_blank" rel="external">
+                                        C
+                                    </a>
+                                </span>
+                                <span class="icontwitter unused">
+                                    <a target="_blank" rel="external">
+                                        D
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- contact -->
+                            <div class="iconsphomail porel">
+                                <!-- icones -->
+                                <span class="iconpho" id="text25pho">
+                                    E
+                                    <span class="textpho absright" id="text25phon">
+                                        00.00.00.00.00
+                                    </span>
+                                </span>
+                                <span class="iconmail" id="text25mai">
+                                    F
+                                    <span class="textmail absright" id="text25mail">
+                                        example@example.net
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Compétences -->
+                        <div class="iconsskills">
+                            <span class="iconhtml">
+                                html
+                            </span>
+                            <span class="iconcss">
+                                css
+                            </span>
+                            <span class="iconjavascript">
+                                javascript
+                            </span>
+                            <span class="iconjquery unused">
+                                jquery
+                            </span>
+                            <span class="iconphp unused">
+                                php
+                            </span>
+                            <span class="iconc unused">
+                                c
+                            </span>
+                        </div>
+                        <!-- texte affiché sur l'image (grand écran) -->
+                        <div class="text abstopleft">
+                            <p class="texttest abstopleft textleft">
+                            
+                            </p>
+                            <p class="textquote absbottomright textright">
+                            
+                            </p>
+                        </div>
+                        <!-- texte affiché en fin de bloc (petit écran) -->
+                        <details class="text">
+                            <summary>
+                            Informations
+                            </summary>
+                            <p class="texttest textleft">
+                            
+                            </p>
+                            <p class="textquote textright">
+                            
                             </p>
                         </details>
                     </article>

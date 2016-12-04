@@ -25,7 +25,6 @@ div#wrapper
 {
     min-height: 100%;
     width: 100%;
-    position: relative;
 }
 
 header
@@ -112,7 +111,6 @@ footer
 .footer_logo {
   border: 2px solid black;
   width: 7%;
-  height: 50px;
 }
 
 footer p {
@@ -128,62 +126,55 @@ h1,
     white-space: nowrap;
 }
 
-/* Test */
-div.github, div.linkedin, div.viadeo
+div#main-container
 {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
+aside
+{
+    flex-direction: column;
+    min-width: 100px;
+    min-height: calc(100vh - 150px);
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+aside#asidemenu
+{
+    width: 100px;
+}
+
+main
+{
+    min-height: 100px;
+}
+
+
+/* -----------------------------------------------------------------------------Test */
 article, article *
 {
     border: 1px solid black;
 }
-/* */
-
-section
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-article
-{
-    position: relative;
-}
-
-figure
-{
-    position: relative;
-}
+/* --------------------------------------------------------------------------------- */
 
 figure img
 {
-    backgr.githubd-image: url("../images/fond.jpg");
-    backgr.githubd-repeat: no-repeat;
-    backgr.githubd-position: center center;
-    backgr.githubd-size: 250px 500px;
+    background-image: url("../images/fond.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 250px 500px;
     width: 250px;
     height: 500px;
-}
-
-div.icons
-{
-    display: flex;
-    justify-content: space-between;
 }
 
 .unused, .unused a
 {
     cursor: default;
     opacity: 0;
-}
-
-.iconsphomail
-{
-    position: relative;
 }
 
 .iconpho, .iconmail
@@ -194,49 +185,27 @@ div.icons
 .textpho, .textmail
 {
     display: none;
-    position: absolute;
-    bottom: 22px;
-    right: 0;
+    bottom: 100%;
+    background-color: #FFFFFF;
+    white-space: nowrap;
 }
 
-.textpho.selected, .textmail.selected
+.iconpho:hover+.iconmail>.textmail, .iconmail:hover~.iconpho>.textpho
+{
+    display: none;
+}
+
+.textpho.selected, .textmail.selected, .iconpho:hover>.textpho, .iconmail:hover>.textmail
 {
     display: block;
 }
 
 div.text
 {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 250px;
     height: 500px;
-    backgr.githubd: #FFFFFF;
+    background: #FFFFFF;
     opacity: 0;
-}
-div.text p
-{
-    position: absolute;
-}
-
-p.texttext
-{
-    text-align: left;
-}
-div.text p.textext
-{
-    top: 0;
-    left: 0;
-}
-
-p.textquote
-{
-    text-align: right;
-}
-div.text p.textquote
-{
-    bottom: 0;
-    right: 0;
 }
 
 div.text:hover
