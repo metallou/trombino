@@ -211,15 +211,15 @@ img {
 }
 
 .textleft, .tl, .leftt {
-    text-align: right;;
-}
-
-.textright, .tr, .rightt {
     text-align: left;
 }
 
+.textright, .tr, .rightt {
+    text-align: right;
+}
+
 .textcenter, .tc, .centert {
-    text-align:center;
+    text-align: center;
 }
 
 .textjustify, .tj {
@@ -340,60 +340,72 @@ code {
     box-sizing: border-box;
 }
 
-*[class*="w-"], *[class*="-twelve"] {
+.grid *[class*="w-"], .grid *[class*="-twelve"] {
     float: left;
     padding: 10px;
 }
-/* Grid Widths */
+/* Widths in relative values, to use within, or out of the grid*/
 /*--1/12--*/
-.grid .one-twelve, .grid .w-1-12 {
+.one-twelve, .w-1-12 {
     width: calc(100%/12);
 }
 /*--2/12--*/
-.grid .two-twelve, .grid .w-1-6, .grid .w-2-12 {
+.two-twelve, .w-1-6, .w-2-12 {
     width: calc(100%/6);
 }
 /*--3/12--*/
-.grid .three-twelve, .grid .w-1-4, .grid .w-3-12 {
-    width: calc(300%/12);
+.three-twelve, .w-1-4, .w-3-12 {
+    width: 25%;
 }
 /*--4/12--*/
-.grid .four-twelve, .grid .w-1-3,.grid .w-2-6, .grid .w-4-12 {
+.four-twelve, .w-1-3, .w-2-6, .w-4-12 {
     width: calc(100%/3);
 }
 /*--5/12--*/
-.grid .five-twelve, .grid .w-5-12 {
+.five-twelve, .w-5-12 {
     width: calc(500%/12);
 }
 /*--6/12--*/
-.grid .six-twelve, .grid .w-1-2, .grid .w-2-4, .grid .w-3-6, .grid .w-6-12{
+.six-twelve, .w-1-2, .w-2-4, .w-3-6, .w-6-12{
     width: 50%;
 }
 /*--7/12--*/
-.grid .seven-twelve, .grid .w-7-12 {
+.seven-twelve, .w-7-12 {
     width: calc(700%/12);
 }
 /*--8/12--*/
-.grid .eight-twelve, .grid .w-2-3,.grid .w-4-6, .grid .w-8-12 {
+.eight-twelve, .w-2-3, .w-4-6, .w-8-12 {
     width: calc(200%/3);
 }
 /*--9/12--*/
-.grid .nine-twelve, .grid .w-3-4, .grid .w-9-12 {
+.nine-twelve, .w-3-4, .w-9-12 {
     width: 75%;
 }
 /*--10/12--*/
-.grid .ten-twelve, .grid .w-5-6, .grid .w-10-12 {
+.ten-twelve, .w-5-6, .w-10-12 {
     width: calc(500%/6);
 }
 /*--11/12--*/
-.grid .onze-twelve, .grid .w-11-12 {
+.onze-twelve, .w-11-12 {
     width: calc(1100%/12);
 }
 /*--12/12--*/
-.grid .twelve-twelve, .grid .w-12-12, .grid .w-1{
+.twelve-twelve, .w-12-12, .w-1{
     width: 100%;
 }
-
+/** Moar width**/
+/*1 Tenth of its closest ancestor*/
+.w-1-10 {
+    width: 10%;
+}
+/*1 quarter of its closest ancestor*/
+.w-1-8 {
+    width: 12.5%;
+}
+/*1 fifth of its closest ancestor*/
+.w-1-5 {
+    width: 20%;
+}
 /**Grid Media Query**/
 @media (max-width:768px){
     .grid [class*="w-"] {
@@ -636,31 +648,7 @@ code {
 .w900p {width: 900px;}
 .w950p {width: 950px;}
 .w1000p {width: 1000px;}
-/*- For those who want some percentage widths, but don't want to bother with the grid*/
-/*1 quarter of its closest ancestor*/
-.w-1-4 {
-    width: 25%;
-}
-/*1 third of its closest ancestor*/
-.w-1-3 {
-    width: calc(100%/3);
-}
-/*half of its closest ancestor*/
-.w-1-2 {
-    width: 50%;
-}
-/*2 third of its closest ancestor*/
-.w-2-3 {
-    width: calc(100%*2/3);
-}
-/*3 quarters of its closest ancestor*/
-.w-3-4 {
-    width: 75%;
-}
-/*100 percent of its closest ancestor*/
-.w-1-1 {
-    width: 100%;
-}
+
 
 /*-Height*/
 .h10p {height: 10px;}
