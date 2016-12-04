@@ -71,14 +71,8 @@ aside
     box-sizing: border-box;
 }
 
-aside#asideblank
-{
-
-}
-
 aside#asidemenu
 {
-    position: fixed;
     width: 100px;
 }
 
@@ -90,15 +84,7 @@ main
 }
 
 
-/* Test */
-div.github, div.linkedin, div.viadeo
-{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-}
-
+/* -----------------------------------------------------------------------------Test */
 article, article *
 {
     border: 1px solid black;
@@ -147,32 +133,10 @@ figure img
 
 div.text
 {
-    top: 0;
-    left: 0;
     width: 250px;
     height: 500px;
     background: #FFFFFF;
     opacity: 0;
-}
-
-p.texttext
-{
-    text-align: left;
-}
-div.text p.textext
-{
-    top: 0;
-    left: 0;
-}
-
-p.textquote
-{
-    text-align: right;
-}
-div.text p.textquote
-{
-    bottom: 0;
-    right: 0;
 }
 
 div.text:hover
