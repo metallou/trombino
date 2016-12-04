@@ -132,6 +132,7 @@ figure img
     bottom: 100%;
     right: 0;
     background-color: #FFFFFF;
+    white-space: nowrap;
 }
 
 .iconpho:hover+.iconmail>.textmail, .iconmail:hover~.iconpho>.textpho
