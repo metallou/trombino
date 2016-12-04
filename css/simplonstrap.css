@@ -5,31 +5,19 @@ p, blockquote,
 a, big, cite, code,
 em, img,
 small, strike, strong, tt,
-b, u, i,
-
 u,
-
 ol, ul, li,
 form, label, legend,
 table,
 article, aside, canvas,
 figure, figcaption, footer, header,
 menu, nav, output, section {
-
   margin: 0;
   padding: 0;
   border: 0;
 	font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-
 }
 /* hyphens & too long words go to next line */
 div, textarea, table, td, th, code, pre, samp {
@@ -42,21 +30,12 @@ div, textarea, table, td, th, code, pre, samp {
 }
 /*To remove bullets from bulleted lists*/
 ul, li {
-
 	list-style: none;
 }
 /*To remove underlining or any other effect on links*/
 a, a:target, a:visited, a:active {
   text-decoration: none;
   color: black;
-
-    list-style: none;
-}
-/*To remove underlining or any other effect on links*/
-a, a:target, a:visited, a:active {
-    text-decoration: none;
-    color: black;
-
 }
 
 img {
@@ -64,24 +43,11 @@ img {
 }
 
 
+
 /* -----------------------------------------------Helper Class */
 
 
 /*** Positions ***/
-
-
-.porel {
-    position: relative;
-}
-
-.poabs {
-    position: absolute;
-}
-
-.pofix {
-    position: fixed;
-}
-
 
 .relative, .rel, .porel {
     position: relative;
@@ -91,144 +57,89 @@ img {
     position: static;
 }
 
-
-.pofixup {
-    position: fixed;
-    top: 0;
-}
-
-.pofixdown {
-    position: fixed;
-    bottom: 0;
-}
-
-.poabsdl {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.poabsdr {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.poabsul {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.poabsur {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-
-/*** Display ***/
-
-.dblock {
-    display: block;
-}
-
-.dinblock {
-    display: inline-block;
-}
-
-.dflex {
-    display: flex;
-}
-
-.dflexcenter {
-    display: flex;
-    justify-content: center;
-
 /* Position absolute */
 
 .abs, .poabs {
-    position: absolute;
+  position: absolute;
 }
-
 .abstop, .abst {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
 .absbottom, .absb {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 .absleft, .absl {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 0;
 }
 .absright, .absr {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 .abstopright, .abstr, .poabsur {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .abstopleft, .abstl, .poabsul {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .absbottomright, .absbr, .poabsdr {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .absbottomleft, .absbl, .poabsdl {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 
 /* Fixed position - to place an object fixed in the viewport */
 
 .fix, .pofix {
-    position: fixed;
+  position: fixed;
 }
 .fixtop, .fixt {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
 }
 .fixbottom, .fixb {
-    position: fixed;
-    bottom: 0;
+  position: fixed;
+  bottom: 0;
 }
 .fixleft, .fixl {
-    position: fixed;
-    left: 0;
+  position: fixed;
+  left: 0;
 }
 .fixright, .fixr {
-    position: fixed;
-    right: 0;
+  position: fixed;
+  right: 0;
 }
 .fixtopright, .fixtr {
-    position: fixed;
-    top: 0;
-    right: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 .fixtopleft, .fixtl {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .fixbottomright, .fixbr {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 .fixbottomleft, .fixbl {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 .fixtop, .fixt,.pofixup {
     position: fixed;
@@ -249,7 +160,6 @@ img {
 
 .dinblock, .inbl {
     display: inline-block;
-
 }
 
 
@@ -273,7 +183,6 @@ img {
 
 /*** Flex properties ***/
 .dflex {
-
   display:flex;
 }
 
@@ -287,29 +196,13 @@ img {
   justify-content:space-between;
 }
 
-.dflex-a {
+.dflexsp-a {
   display:flex;
   justify-content:space-around;
 }
 
-.dflexcenter {
-    display:flex;
-    justify-content:center;
-}
-
-.dflexsp-b {
-    display:flex;
-    justify-content:space-between;
-}
-
-.dflexsp-a {
-    display:flex;
-    justify-content:space-around;
-}
-
 .dflex-w {
-    flex-wrap: wrap;
-
+  flex-wrap: wrap;
 }
 
 
@@ -346,31 +239,25 @@ img {
   margin-right: auto;
 }
 
-.centert {
-  text-align:center;
+.textleft, .tl, .leftt {
+  text-align: left;
 }
 
+.textright, .tr, .rightt {
+  text-align: right;
+}
+
+.textcenter, .tc, .centert {
+  text-align: center;
+}
+
+.textjustify, .tj {
+  text-align: justify;
+}
 /*** Border Radius ***/
 .border-radius {
   border-radius:0.4em;
 }
-
-.textleft, .tl, .leftt {
-    text-align: left;
-}
-
-.textright, .tr, .rightt {
-    text-align: right;
-}
-
-.textcenter, .tc, .centert {
-    text-align: center;
-}
-
-.textjustify, .tj {
-    text-align: justify;
-}
-
 
 /*** Defaults Colors & background ***/
 .color {
@@ -379,9 +266,7 @@ img {
 
 .bg {
   background: #dedede;
-  color: blue;
 }
-
 
 
 /* -----------------------------------------------General Styles */
@@ -397,18 +282,6 @@ code {
 
 /* Navigation Bar*/
 
-.nav {
-    width: 100%;
-}
-.nav>ul {
-    list-style-type: none;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
 .nav>ul {
     list-style-type: none;
     width: 100%;
@@ -417,34 +290,27 @@ code {
     padding: 0;
     position: absolute;
 }
-
 .nav>ul li {
     flex: 1;
 }
-
 .nav li a  {
-    height: 50px;
     line-height: 50px;
     color: #fff;
     background-color: #2f3036;
     display: flex;
     justify-content: center;
 }
-
 .nav li:hover a, .nav li:hover {
     background-color: #aaaaaa;
     color: black;
     transition: 0.2s;
 }
-
 /*Liens Toggle*/
 .nav li:hover ul a {
     background-color: #aaaaaa;
     color: #2f3036;
     line-height: 50px;
-    height: 50px;
 }
-
 /*Hover liens Toggle*/
 .nav li:hover ul a:hover {
     background-color: #e2575e;
@@ -453,14 +319,10 @@ code {
 /*Cache liens Toggle*/
 .nav li ul {
     display: none;
-}
-/*Permet affichage liens Toggle*/
-.nav>ul li a:hover+.hid_ul, .hid_ul:hover {
-    
+    position: relative;
 }
 /*Permet affichage liens Toggle*/
 .nav>ul li:hover .hid_ul, .hid_ul:hover,.nav>ul li:hover {
-    position: relative;
     display: block;
     padding: 0;
 }
@@ -479,9 +341,8 @@ code {
 }
 
 .clearnav{
-    padding-top: 50px;
+  padding-top: 50px;
 }
-
 /* -----------------------------------------------Grid */
 
 /*- The Responsive Grid */
@@ -503,99 +364,15 @@ code {
 /* Cancel spaces between elements*/
 
 .no-space {
-    padding: 0;
+  padding: 0;
 }
 .grid *{
   box-sizing: border-box;
 }
 
-/* Grid Widths */
-/*--1/12--*/
-.grid .one-twelve, .grid .w-1-12 {
-    width: calc(100%/12);
-    float: left;
-    padding: 10px;
-}
-/*--2/12--*/
-.grid .two-twelve, .grid .w-1-6, .grid .w-2-12 {
-    width: calc(100%/6);
-    float: left;
-    padding: 10px;
-}
-/*--3/12--*/
-.grid .three-twelve, .grid .w-1-4, .grid .w-3-12 {
-    width: calc(100%/4);
-    float: left;
-    padding: 10px;
-}
-/*--4/12--*/
-.grid .four-twelve, .grid .w-1-3,.grid .w-2-6, .grid .w-4-12 {
-    width: calc(100%/3);
-    float: left;
-    padding: 10px;
-}
-/*--5/12--*/
-.grid .five-twelve, .grid .w-5-12 {
-    width: calc(500%/12);
-    float: left;
-    padding: 10px;
-}
-/*--6/12--*/
-.grid .six-twelve, .grid .w-1-2, .grid .w-2-4, .grid .w-3-6, .grid .w-6-12{
-    width: 50%;
-    float: left;
-    padding: 10px;
-}
-/*--7/12--*/
-.grid .seven-twelve, .grid .w-7-12 {
-    width: calc(700%/12);
-    float: left;
-    padding: 10px;
-}
-/*--8/12--*/
-.grid .eight-twelve, .grid .w-2-3,.grid .w-4-6, .grid .w-8-12 {
-    width: calc(200%/3);
-    float: left;
-    padding: 10px;
-}
-/*--9/12--*/
-.grid .nine-twelve, .grid .w-3-4, .grid .w-9-12 {
-    width: 75%;
-    float: left;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-/*--10/12--*/
-.grid .ten-twelve, .grid .w-5-6, .grid .w-10-12 {
-    width: calc(500%/6);
-    float: left;
-    padding: 10px;
-}
-/*--11/12--*/
-.grid .onze-twelve, .grid .w-11-12 {
-    width: calc(1100%/12);
-    float: left;
-    padding: 10px;
-}
-/*--12/12--*/
-.grid .twelve-twelve, .grid .w-12-12, .grid .w-1{
-    width: 100%;
-    float: left;
-    padding: 10px;
-}
-
-/**Grid Media Query**/
-@media (max-width:768px){
-  .grid [class*="w-"] {
-    width:100%;
-  }
-
-    box-sizing: border-box;
-}
-
 .grid *[class*="w-"], .grid *[class*="-twelve"] {
-    float: left;
-    padding: 10px;
+  float: left;
+  padding: 10px;
 }
 /* Widths in relative values, to use within, or out of the grid*/
 /*--1/12--*/
@@ -649,21 +426,21 @@ code {
 /** Moar width**/
 /*1 Tenth of its closest ancestor*/
 .w-1-10 {
-    width: 10%;
+  width: 10%;
 }
 /*1 quarter of its closest ancestor*/
 .w-1-8 {
-    width: 12.5%;
+  width: 12.5%;
 }
 /*1 fifth of its closest ancestor*/
 .w-1-5 {
-    width: 20%;
+  width: 20%;
 }
 /**Grid Media Query**/
 @media (max-width:768px){
-    .grid [class*="w-"] {
-        width:100%;
-    }
+  .grid [class*="w-"] {
+    width:100%;
+  }
 }
 
 /* ----------------------------------------------- FlexGrid */
@@ -860,7 +637,6 @@ code {
 
 /*class to round elements*/
 .rounded {
-
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -870,16 +646,6 @@ code {
   -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
-/*class to make circle elements*/
-.circle {
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    border-radius: 500px;
-
 }
 
 /*-Elements sizes*/
@@ -913,31 +679,6 @@ code {
 .w950p {width: 950px;}
 .w1000p {width: 1000px;}
 
-/*- For those who want some percentage widths, but don't want to bother with the grid*/
-/*1 quarter of its closest ancestor*/
-.w-1-4 {
-  width: 25%;
-}
-/*1 third of its closest ancestor*/
-.w-1-3 {
-  width: calc(100%/3);
-}
-/*half of its closest ancestor*/
-.w-1-2 {
-  width: 50%;
-}
-/*2 third of its closest ancestor*/
-.w-2-3 {
-  width: calc(100%*2/3);
-}
-/*3 quarters of its closest ancestor*/
-.w-3-4 {
-  width: 75%;
-}
-/*100 percent of its closest ancestor*/
-.w-1-1 {
-  width: 100%;
-}
 
 /*-Height*/
 .h10p {height: 10px;}
@@ -998,13 +739,11 @@ code {
 
 
 /* -----------------------------------------------Media Queries */
-
 @media screen and (max-width: 1100px) {
-    .nav {
-        font-size: 1.5vw;
-    }
+  .nav {
+    font-size: 1.5vw;
+  }
 }
-
 @media screen and (max-width: 800px) {
 
     /*------------------------------------------------Form*/
@@ -1043,11 +782,9 @@ code {
         width: 100%;
     }
     /*------------------------------------------------Nav*/
-
     .nav {
-        font-size: 1em;
+      font-size: 1em;
     }
-
     .nav ul li, .nav li a {
         width: 100%;
     }
@@ -1058,16 +795,4 @@ code {
     .nav>ul {
         display: none;
     }
-
-    .nav .hid_ul {
-        display: block;
-    }
-    .nav .hid_ul li a{
-        font-size: 0.8em;
-        box-shadow: inset 0px 1px 0px grey;
-    }
-    .nav .hid_ul li:last-child{
-        border-bottom: 1px solid grey;
-    }
-
 }

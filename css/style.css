@@ -29,6 +29,7 @@ div#wrapper
 
 header
 {
+    width: 100%;
     top: 0;
     left: 0;
     border: 2px solid black;
@@ -74,34 +75,9 @@ div.reseaux_sociaux {
     background-color: #4B8AA9;
 }
 
-div#main-container
-{
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    margin: auto;
-    padding-top: 200px;
-    padding-bottom: 100px;
-}
-
-aside
-{
-    min-width: 100px;
-    width: 20%;
-    min-height: calc(100vh - 200px - 100px);
-    border: 3px solid black;
-    box-sizing: border-box;
-}
-
-main
-{
-    flex-grow: 1;
-    min-height: 100px;
-    box-sizing: border-box;
-}
-
 footer
 {
+    width: 100%;
     border: 2px solid black;
     background-color: #737373;
     box-sizing: border-box;
@@ -117,7 +93,7 @@ footer p {
   font-family: "sansation_regular";
 }
 
-h1,
+h1
 {
     position: absolute;
     top: 50%;
@@ -130,8 +106,8 @@ div#main-container
 {
     box-sizing: border-box;
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 100px;
 }
 
 aside
