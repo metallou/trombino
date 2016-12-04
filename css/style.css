@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "sansation_regular";
+  src: url("../fonts/Sansation_Regular.ttf");
+}
+
 *
 {
     box-sizing: border-box;
@@ -24,27 +29,106 @@ div#wrapper
 
 header
 {
-    position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100px;
     border: 2px solid black;
+    background-color: #737373;
     box-sizing: border-box;
+}
+
+div.reseaux_sociaux {
+    width: 15%;
+    font-family: "sansation_regular";
+    color: white;
+}
+
+div.reseaux_sociaux a {
+    color: white;
+}
+
+.icon-twitter:hover {
+    color: #4B8AA9;
+}
+
+.icon-facebook:hover {
+    color: #3b5998;
+}
+
+.icon-mail-alt:hover {
+    color: #E20148;
+}
+
+.logo_simplon {
+    top: 5%;
+    left: 2%;
+    width: 200px;
+    height: 180px;
+}
+
+.nav {
+    width: 70%;
+    bottom: 25%;
+    right: 10%;
+    z-index: 10;
+    font-family: "sansation_regular";
+}
+
+.nav li a {
+    background-color: #363636;
+}
+
+.nav li:hover a {
+    background-color: #E20148;
+}
+
+.nav li:hover ul a {
+    background-color: #aaaaaa;
+}
+
+.nav li:hover ul a:hover {
+    background-color: #4B8AA9;
+}
+
+form fieldset {
+    background-color: #aaaaaa;
+    border: none;
+}
+
+form input {
+    margin-bottom: 5%;
+    border-radius: 5%;
+}
+
+form button {
+    font-family: "sansation_regular";
+    color: white;
+    padding: 5%;
+    border-radius: 7%;
+    background-color: #4B8AA9;
+    box-shadow: none;
+    border: 1.5px solid white;
+    cursor: pointer;
 }
 
 footer
 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    height: 50px;
     border: 2px solid black;
+    background-color: #737373;
     box-sizing: border-box;
+    color: white;
 }
 
-h1, footer h2
+.footer_logo {
+  width: 7%;
+}
+
+footer p {
+  font-family: "sansation_regular";
+}
+
+h1
 {
     position: absolute;
     top: 50%;
@@ -57,8 +141,8 @@ div#main-container
 {
     box-sizing: border-box;
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 100px;
 }
 
 aside
@@ -161,4 +245,60 @@ details.text
     {
         display: block;
     }
+
+    .header_high {
+        height: 150px;
+    }
+
+    .reseaux_sociaux {
+        font-size: 14px;
+    }
+
+    .reseaux_sociaux p {
+        display: none;
+    }
+
+    .nav {
+        width: 40%;
+        right: 10px;
+    }
+
+    .logo_simplon {
+        width: 150px;
+        height: 110px;
+    }
+
+    form, form fieldset, form input {
+        width: 98%;
+    }
+
+    div#main-container
+    {
+    padding-top: 150px;
+    padding-bottom: 80px;
+    }
+
+    .footer_low {
+        height: 80px;
+    }
+
+    .copyright {
+        width: 30%;
+    }
+
+    .footer_txt {
+        width: 50%;
+    }
+
+    footer p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    footer img {
+        width: auto;
+        height: 10px;
+    }
 }
+
+
