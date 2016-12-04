@@ -8,6 +8,7 @@
         <title>Trombinoscope</title>
         <link rel="stylesheet" href="css/simplonstrap.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
         <script src="js/asidemenu.js"></script>
         <script src="js/phomail.js"></script>
     </head>
@@ -16,11 +17,11 @@
          <div id="wrapper" class="porel">
             <header class="poabs w-1-1 h200p">
 
-                  <div class="reseaux_sociaux poabsur"
+                  <div class="reseaux_sociaux poabsur h50p tc"
                     <p> Nos réseaux sociaux:</p>
                     <a class="icon-twitter" href="http://twitter.fr"></a>
-                    <a href="http://facebook.fr"><img class="" alt="logo facebook" /></a>
-                    <a href="mailto:simplonmars@centrale-marseille.fr"><img class="" alt="mail" /></a>
+                    <a class="icon-facebook" href="http://facebook.fr"></a>
+                    <a class="icon-mail-alt" href="mailto:simplonmars@centrale-marseille.fr"></a>
                   </div>
 
                   <img class="logo_simplon poabs" src="images/logosom.png" alt="logo simplonmars"/>
@@ -45,7 +46,18 @@
                       </ul>
                     </li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Login</a>
+                      <ul class="hid_ul">
+
+                        <form>
+                            <fieldset class="login_form">
+                                <p><input type="text" name="username" placeholder="Username"></p>
+                                <p><input type="password" name=""></p>
+                            </fieldset>
+                        </form>
+                      </ul>
+
+                    </li>
                     <label for="show-menu" class="show-menu">Fermer ↑</label>
                     <input type="checkbox" id="show-menu" role="button">
                   </ul>
@@ -2607,7 +2619,7 @@
 
             <footer class="poabsdl w-1-1 h100p">
               <div class="footer_container dflexsp-b">
-                <p>2016 SIMPLonMARS. Tous droits réservés.</p>
+                <p>© 2016 SIMPLonMARS. Tous droits réservés.</p>
                 <p>Projet financé avec le concours de l'Union européenne avec le Fonds Social Européen.</p>
                 <div class="footer_logo h50p">
                   <img src="images/UE.png" alt="logo UE" width="30" height="35" />
