@@ -90,6 +90,27 @@ div.reseaux_sociaux a {
     background-color: #4B8AA9;
 }
 
+form fieldset {
+    background-color: #aaaaaa;
+}
+
+form input {
+    margin-bottom: 5%;
+    border-radius: 5%;
+}
+
+form button {
+    font-family: "sansation_regular";
+    color: white;
+    padding: 5%;
+    border-radius: 7%;
+    background-color: #4B8AA9;
+    box-shadow: none;
+    border: 1.5px solid white;
+    outline: none;
+    cursor: pointer;
+}
+
 footer
 {
     width: 100%;
