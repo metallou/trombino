@@ -244,4 +244,24 @@ details.text
     {
         display: block;
     }
+
+    header  img {
+        height: 10px;
+    }
+
+    .reseaux_sociaux p {
+        width: auto;
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    footer img {
+        width: auto;
+        height: 10px;
+    }
 }
+
