@@ -21,21 +21,27 @@ let resetColors = function(nets, sks) {
 
 let animatedAsideMenu = function(){
     //Networks
-    let networksnames = [
-                        "github",
-                        "linkedin",
-                        "viadeo",
-                        //"wordpress",
-                        //"twitter",
-                        //"facebook"
-                        ];
+    let networksnames =
+        [
+        "github",
+        "linkedin",
+        "viadeo",
+        "twitter"
+        ];
     let networks = [];
     for(let i=0; i<networksnames.length; i++) {
         networks.push(document.getElementsByClassName(networksnames[i]));
     }
 
     //Skills
-    let skillsnames = [];
+    let skillsnames =
+        [
+        "html",
+        "css",
+        "javascript",
+        "php",
+        "c"
+        ];
     let skills = [];
     for(let i=0; i<skillsnames.length; i++) {
         skills.push(document.getElementsByClassName(skillsnames[i]));
