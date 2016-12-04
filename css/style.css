@@ -247,7 +247,7 @@ details.text
     }
 
     .header_high {
-        height: 100px;
+        height: 150px;
     }
 
     .reseaux_sociaux {
@@ -264,18 +264,17 @@ details.text
     }
 
     .logo_simplon {
-        width: 100px;
-        height: 90px;
+        width: 150px;
+        height: 110px;
     }
 
     form, form fieldset, form input {
         width: 98%;
     }
 
-    header  img {
-        position: relative;
-        width: 50px;
-        height: 10px;
+    div#main-container
+    {
+    padding-top: 150px;
     }
 
     footer p {
