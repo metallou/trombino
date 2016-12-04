@@ -92,6 +92,7 @@ div.reseaux_sociaux a {
 
 form fieldset {
     background-color: #aaaaaa;
+    border: none;
 }
 
 form input {
@@ -245,13 +246,30 @@ details.text
         display: block;
     }
 
+    .header_high {
+        height: 100px;
+    }
+
     .reseaux_sociaux {
-        width: 20%;
         font-size: 14px;
     }
 
     .reseaux_sociaux p {
         display: none;
+    }
+
+    .nav {
+        width: 40%;
+        right: 10px;
+    }
+
+    .logo_simplon {
+        width: 100px;
+        height: 90px;
+    }
+
+    form, form fieldset, form input {
+        width: 98%;
     }
 
     header  img {
