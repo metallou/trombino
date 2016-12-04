@@ -245,17 +245,19 @@ details.text
         display: block;
     }
 
-    .header_txt, .reseaux_sociaux {
+    .reseaux_sociaux {
+        width: 20%;
         font-size: 14px;
     }
 
-    header  img {
-        height: 10px;
+    .reseaux_sociaux p {
+        display: none;
     }
 
-    .reseaux_sociaux p {
-        width: auto;
-        font-size: 16px;
+    header  img {
+        position: relative;
+        width: 50px;
+        height: 10px;
     }
 
     footer p {
