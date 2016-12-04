@@ -275,6 +275,19 @@ details.text
     div#main-container
     {
     padding-top: 150px;
+    padding-bottom: 80px;
+    }
+
+    .footer_low {
+        height: 80px;
+    }
+
+    .copyright {
+        width: 30%;
+    }
+
+    .footer_txt {
+        width: 50%;
     }
 
     footer p {
