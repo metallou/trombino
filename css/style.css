@@ -257,6 +257,12 @@ figcaption:hover
     padding-right: 1em;
 }
 
+.icons span
+{
+    background-color: #EE6E73;
+    border-radius: 20px;
+}
+
 .icon-rotate:hover{$
     transform: rotate(360deg);
     transition: transform 1s;
