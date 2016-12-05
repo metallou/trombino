@@ -51,13 +51,13 @@ let animatedAsideMenu = function(){
     for(let i=0; i<networksnames.length; i++) {
         document.getElementById(networksnames[i]).addEventListener('click', function(){
             resetColors(networks, skills);
-            changeColor(networks[i], '#FFFF00');
+            changeColor(networks[i], '#E20148');
         });
     }
     for(let i=0; i<skillsnames.length; i++) {
         document.getElementById(skillsnames[i]).addEventListener('click', function(){
             resetColors(networks, skills);
-            changeColor(skills[i], '#00FFFF');
+            changeColor(skills[i], '#E20148');
         });
     }
     document.getElementById("reset").addEventListener('click', function(){
