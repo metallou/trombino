@@ -264,8 +264,27 @@ figcaption:hover
 }
 
 .icon-rotate:hover{$
-    transform: rotate(360deg);
-    transition: transform 1s;
+    animation-name: rotatee;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotatee
+{
+    0% {
+        transform: translate(-50%,-50%) rotateX(0) rotateY(0) rotateZ(0);
+    }
+    33% {
+        transform: translate(-50%,-50%) rotateX(0) rotateY(180deg) rotateZ(0);
+    }
+    66% {
+        transform: translate(-50%,-50%) rotateX(0) rotateY(180deg) rotateZ(180deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
 }
 
 .iconsphomail
