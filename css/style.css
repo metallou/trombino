@@ -177,7 +177,7 @@ button
 {
     width: 100%;
     padding: 13px;
-    background-color: #26A69A;
+    background-color: #4B8AA9;
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.5px;
@@ -231,7 +231,7 @@ figcaption
 {
     border-bottom: 1px solid black;
     box-shadow: 4px 4px 6px 0px gray;
-    background-color: #2bbbad;
+    background-color: #4B8AA9;
     color: white;
     font-weight: bold;
     margin-bottom: 10px;
